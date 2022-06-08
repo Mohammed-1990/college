@@ -1,0 +1,204 @@
+<odoo>
+
+    <!-- startr tree viwe for lap -->
+    <record model="ir.ui.view" id="clinic_physical_view_id">
+        <field name="name">clinic.physical.form</field>
+        <field name="model">clinic.physical</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Student Health Service">
+                  <header groups="base.group_user">
+                        <button name="confirm_test_result" states="draft" type="object" string="Confirm" class="oe_highlight"/>
+                        <button name="approval_test_result" states="confirm" type="object" string="Approval Application" class="oe_highlight"/>
+                        <button name="done_test_result" states="approval" type="object" string="Done" class="oe_highlight"/>
+                        <button name="set_to_draft" states="confirm,approval" string="Set to Draft" type="object"/>
+                    <button  class="oe_highlight" states="done" type="action" name="%(education_clinic.create_clinic_wizard)d"
+                       context="{'default_student_id':active_id}" string="Create Clinic Report"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approval,done"/>
+
+                </header>
+
+                <sheet>
+                <div class="oe_button_box" name="button_box">
+                   <button name="get_eye_medical_examination" type="object" class="oe_stat_button"  string="Optical"
+                                icon="fa-eye"/> 
+                    <button name="get_mouth_medical_examination" type="object" class="oe_stat_button"  string="Dental"
+                                icon="fa-smile-o"/>
+                    <button name="get_nursing_medical_examination" type="object" class="oe_stat_button"  string="Nursing"
+                                icon="fa-user-md"/>
+                    <button name="get_psychological_medical_examination" type="object" class="oe_stat_button"  string="Physical"
+                                icon="fa-male"/>
+                    <button name="get_laboratory_medical_examination" type="object" class="oe_stat_button"  string="Laboratory"
+                                icon="fa-hospital-o"/>
+                </div>
+
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            <span>Medical Examination</span>
+
+                        </h2>
+                    </div>
+                  
+                      <field name="image_1920" widget="image" class="oe_left oe_avatar"/>
+                     <group>
+                     <h3 style="text-align: center;">
+                                   <field name="name" placeholder="Student's Name" required="True" readonly="1"/>
+                            </h3>
+                            </group>
+                    <group string="Student Information" colspan="8" col="4" name="main">
+                        <field name="program" readonly="1"/>
+                        <field name="patient_id" placeholder="Patient ID" readonly="1"/>
+                        <field name="nationality" readonly="1"/>
+                        <field name="birth_date" readonly="1"/>
+                        <field name="gender" readonly="1"/>
+                        <field name="religion" readonly="1"/>
+                        <field name="home" readonly="1"/>
+                        <field name="phone" readonly="1"/>
+                        <field name="email" readonly="1"/>
+                    </group>
+
+                    <notebook>
+
+                        <page string="PHYSICAL EXAMINATION">
+
+                            <group colspan="2" col="4" string="General">
+                                <field name="appearance"/>
+                                <field name="constitution"/>
+                            </group>
+
+                            <group string="Sclap">
+                            </group>
+                            <group col="2" string="Normal">
+                                <field name="abnormal"/>
+                            </group>
+
+                            <group col="2" colspan="4" string="Cervical lymph Nodes">
+
+                                <field name="normal_one"/>
+                                <field name="enlarge"/>
+                            </group>
+                            <group string="Ears" colspan="3" col="6">
+                                <field name="normal_two"/>
+                                <field name="external"/>
+                                <field name="media"/>
+                            </group>
+
+                            <group col="4" colspan="4">
+                                <field name="hearing"/>
+                                <field name="nose"/>
+                            </group>
+
+                            <group string="Chest">
+                                <field name="general_one"/>
+                            </group>
+                            <group string="Lungs" col="4" colspan="4">
+                                <field name="clear"/>
+                                <field name="abnormality"/>
+                            </group>
+
+                            <group string="Heart" col="4" colspan="4">
+                                <field name="normal_th"/>
+                                <field name="abnormal_th"/>
+                            </group>
+                            <group string="Abdomen">
+                                <field name="general_fo"/>
+                            </group>
+                            <group string="Liver" col="4" colspan="4">
+                                <field name="normal_fo"/>
+                                <field name="paipable"/>
+                            </group>
+                        </page>
+
+                        <page string="B.C.M">
+
+                            <group string="Spleen" col="4" colspan="4">
+                                <field name="normal_no"/>
+                                <field name="paip"/>
+                                <field name="other"/>
+                                <field name="fluid"/>
+                                <field name="hernia"/>
+                                <field name="genitalia"/>
+                                <field name="lower"/>
+                            </group>
+                        </page>
+
+                        <page string="G.N.S">
+
+                            <group col="4" colspan="4">
+                                <field name="intell"/>
+                                <field name="speech"/>
+                                <field name="fungi"/>
+                                <field name="cranial"/>
+                                <field name="motor"/>
+                                <field name="sensory"/>
+                                <field name="reflexes"/>
+                                <field name="skin"/>
+                                <field name="comment"/>
+                                <field name="upper"/>
+                                <field name="thyroid"/>
+                            </group>
+                            <group string="Trachea" col="4" colspan="4">
+                                <field name="central"/>
+                                <field name="deviated"/>
+                            </group>
+                        </page>
+
+                        <page string="Doctor Results">
+                        <group col="4">
+                        <field name="nursing_resulit"/>
+                        <field name="optical_resulit"/>
+                        <field name="mouth_resulit"/>
+                        <field name="laboratory_resulit"/>
+                        <field name="psychological_resulit"/>
+                        </group>
+
+                            <group col="4" colspan="2">
+                            <field name="result"/>
+                                <field name="result_data"/>
+                                <field name="diagonis"/>
+                            </group>
+
+                            <group>
+                                <field name="doctor_name" readonly="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+
+
+                </sheet>
+
+
+            </form>
+        </field>
+    </record>
+    <!-- start form viwe from lap Info -->
+    <record model="ir.ui.view" id="clinic_physical_tree_view">
+        <field name="name">physical.tree</field>
+        <field name="model">clinic.physical</field>
+        <field name="arch" type="xml">
+            <tree string="Patient tree">
+                <field name="name"/>
+                <field name="program"/>
+                <field name="birth_date"/>
+                <field name="phone"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from lab Info -->
+
+    <record model="ir.actions.act_window" id="clinic_physical_list_action">
+        <field name="name">Physical Clinic</field>
+        <field name="res_model">clinic.physical</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first patient
+            </p>
+        </field>
+    </record>
+    <menuitem id="clinic_physical_menu" name="Physical" parent="clinic_menu" sequence="40"
+              groups="groups_clinic_manager_physical,clinic_users_group"
+              action="clinic_physical_list_action"/>
+
+</odoo>
+ 

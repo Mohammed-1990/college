@@ -1,0 +1,136 @@
+<odoo>
+
+    <!-- startr tree viwe for lap -->
+    <record model="ir.ui.view" id="clinic_laboratory_view_id">
+        <field name="name">clinic.laboratory.form</field>
+        <field name="model">clinic.laboratory</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Student Health Service">
+                <header groups="base.group_user">
+                        <button name="confirm_test_result" states="draft" type="object" string="Confirm" class="oe_highlight"/>
+                        <button name="approval_test_result" states="confirm" type="object" string="Approval Application" class="oe_highlight"/>
+                        <button name="done_test_result" states="approval" type="object" string="Done" class="oe_highlight"/>
+                        <button name="set_to_draft" states="confirm,approval" string="Set to Draft" type="object"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approval,done"/>
+                    </header>
+                <sheet>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            <span>Medical Examination</span>
+                        </h2>
+                    </div>
+                     <field name="image_1920" widget="image" class="oe_left oe_avatar"/>
+                     <group>
+                     <h3 style="text-align: center;">
+                                   <field name="name" placeholder="Student's Name" required="True" readonly="1"/>
+                            </h3>
+                            </group>
+                    <group string="Student Information" colspan="8" col="4" name="main">
+                        <field name="program" readonly="1"/>
+                        <field name="patient_id" placeholder="Patient ID" readonly="1"/>
+                        <field name="nationality" readonly="1"/>
+                        <field name="birth_date" readonly="1"/>
+                        <field name="gender" readonly="1"/>
+                        <field name="religion" readonly="1"/>
+                        <field name="home" readonly="1"/>
+                        <field name="phone" readonly="1"/>
+                        <field name="email" readonly="1"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Microscopical Examination">
+
+                            <group string="Urine General" colspan="5" col="4">
+                                <field name="color"/>
+                                <field name="reaction"/>
+                                <field name="glucose"/>
+                                <field name="protein"/>
+                                <field name="ketones"/>
+                            </group>
+
+                            <group colspan="6" col="4">
+                                <field name="pus"/>
+                                <field name="rbs"/>
+                                <field name="epithel"/>
+                                <field name="casts"/>
+                                <field name="crystals"/>
+                                <field name="other"/>
+                            </group>
+
+                        </page>
+
+                        <page string="Blood">
+                            <group colspan="3" col="6">
+                                <field name="hbv"/>
+                                <field name="hcv"/>
+                                <field name="hiv"/>
+                            </group>
+
+                            <group colspan="4" col="4">
+                                <field name="hb"/>
+                                <field name="ho"/>
+                            </group>
+
+                            <group colspan="3" col="4">
+                                <field name="Blood_g"/>
+                                <field name="investig"/>
+                                <field name="addiction"/>
+                            </group>
+
+                            <group colspan="2" col="4">
+                                <field name="recommend"/>
+                                <field name="date_two"/>
+                            </group>
+
+                            <group>
+                                <field name="physician"/>
+                            </group>
+                        </page>
+
+                        <page string="Doctor Results">
+
+                            <group col="2">
+                                <field name="assessment"/>
+                                <field name="diagonis"/>
+                            </group>
+
+                            <group col="2">
+                                <field name="name_of" readonly="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- start form viwe from lap Info -->
+    <record model="ir.ui.view" id="clinic_laboratory_tree_view">
+        <field name="name">laboratory.tree</field>
+        <field name="model">clinic.laboratory</field>
+        <field name="arch" type="xml">
+            <tree string="Patient tree">
+                <field name="name"/>
+                <field name="program"/>
+                <field name="birth_date"/>
+                <field name="phone"/>
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from lab Info -->
+
+    <record model="ir.actions.act_window" id="clinic_laboratory_list_action">
+        <field name="name">Laboratory</field>
+        <field name="res_model">clinic.laboratory</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first patient
+            </p>
+        </field>
+    </record>
+    <menuitem id="clinic_laboratory_menu" name="Laboratory" parent="clinic_menu" sequence="50"
+              groups="groups_clinic_manager_laboratory,clinic_users_group"
+              action="clinic_laboratory_list_action"/>
+</odoo>

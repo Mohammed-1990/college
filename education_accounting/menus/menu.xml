@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_education_accounting_root" name="Accounting"
+                  groups="account_users_group"
+                  sequence="10"/>
+        <menuitem id="menu_education_accounting" name="Accounting"
+                  parent="menu_education_accounting_root"
+                  groups="account_users_group"
+                  sequence="10"/>
+
+        <menuitem id="menu_general_settings_report" name="Reports"
+                  parent="menu_education_accounting_root"
+                  groups="account_users_group"
+                  sequence="20"/>
+                  
+        <menuitem id="menu_general_settings_root" name="Configuration"
+                  parent="menu_education_accounting_root"
+                  groups="account_users_group"
+                  sequence="30"/>
+
+    </data>
+</odoo>
+
+

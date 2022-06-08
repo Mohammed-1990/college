@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="account_payment_method_wizerd">
+        <field name="name">payment.method.form.view</field>
+        <field name="model">payment.method</field>
+        <field name="arch" type="xml">
+            <form string="Invoice">
+             <group>
+                    <field name="student_id" readonly="1"/>
+                </group>
+
+                <group col="4" colspan="2">
+                    <field name="amount" readonly="1"/>
+                    <field name="currency_type" readonly="1"/>
+                    <field name="about" readonly="1"/>
+                    <field name="money_type" required="1"/>
+                   </group>
+                 <group>
+                    <field name="safe_id"
+                           attrs="{'invisible':[('money_type', 'not in', ['cash'])],'required':[('money_type', '=', 'cash')]}"/>
+                </group>
+                <group col="4" colspan="2" attrs="{'invisible':[('money_type', 'not in', ['bank'])]}">
+                    <field name="bank_id" attrs="{'required':[('money_type', '=', 'bank')]}"/>
+                    <field name="check_num" attrs="{'required':[('money_type', '=', 'bank')]}"/>
+                </group>
+
+                <footer>
+                  <button name="create_accounting_wizard_report" type="object" class="btn-primary" string="Ok"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_membership_invoice_view" model="ir.actions.act_window">
+        <field name="name">Payment Method</field>
+        <field name="res_model">payment.method</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="account_payment_method_wizerd"/>
+        <field name="target">new</field>
+    </record>
+
+
+</odoo>

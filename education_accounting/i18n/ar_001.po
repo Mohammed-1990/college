@@ -1,0 +1,869 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* education_accounting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-22 12:47+0000\n"
+"PO-Revision-Date: 2022-01-22 12:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__amount
+msgid " Amount"
+msgstr "المبلغ"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__is_managemanent
+msgid " Type Of Fees"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>Print On:</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>Received From Student Mr:</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>Sum Of:</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>إيصال إستلام نقدي </span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>إيصال رقم</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>اسم الطالب / الطالبة</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>التاريخ</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>توقيع المتحصل</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>عبارة عن</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>مبلغ وقدره</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "<span>مبلغ</span>"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__about
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__about
+msgid "About"
+msgstr "عبارة  عن"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_view_form
+msgid "Academic Information"
+msgstr "البيانات الدراسية"
+
+#. module: education_accounting
+#: model:ir.module.category,name:education_accounting.category_account
+msgid "Account"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__admission_ids
+msgid "Accountant Name"
+msgstr "اسم مستخدم النظام"
+
+#. module: education_accounting
+#: model:ir.ui.menu,name:education_accounting.education_accounting_menu
+#: model:ir.ui.menu,name:education_accounting.menu_education_accounting
+#: model:ir.ui.menu,name:education_accounting.menu_education_accounting_root
+msgid "Accounting"
+msgstr "الحسابات"
+
+#. module: education_accounting
+#: model:res.groups,name:education_accounting.account_assistant_group
+msgid "Acount Assistant"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_needaction
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_needaction
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "Alreydh-Khartoum/Sudan"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_attachment_count
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_attachment_count
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.actions.act_window,name:education_accounting.education_bank_list_action
+#: model:ir.model.fields.selection,name:education_accounting.selection__education_accounting__money_type__bank
+#: model:ir.ui.menu,name:education_accounting.menu_bank
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_bank_view_form
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_bank_viwe_search
+msgid "Bank"
+msgstr "البنك"
+
+#. module: education_accounting
+#: model:ir.model.fields.selection,name:education_accounting.selection__payment_method__money_type__bank
+msgid "Bank "
+msgstr "البنك"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_payment_method_wizerd
+#: model_terms:ir.ui.view,arch_db:education_accounting.view_account_report_wizerd
+msgid "Cancel"
+msgstr "اللغاء"
+
+#. module: education_accounting
+#: model:ir.model.fields.selection,name:education_accounting.selection__education_accounting__money_type__cash
+#: model:ir.model.fields.selection,name:education_accounting.selection__payment_method__money_type__cash
+#: model:ir.ui.menu,name:education_accounting.menu_safe
+msgid "Cash"
+msgstr "الخذنة"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__name
+msgid "Cash Name"
+msgstr "اسم الخذنة"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__check_num
+msgid "Check Number"
+msgstr "رقم الشيك"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__college_id
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__college_id
+msgid "College"
+msgstr "اسم الكلية"
+
+#. module: education_accounting
+#: model:ir.ui.menu,name:education_accounting.menu_general_settings_root
+msgid "Configuration"
+msgstr "الاعدادات"
+
+#. module: education_accounting
+#: model:ir.model.fields.selection,name:education_accounting.selection__education_accounting__state__confirm
+msgid "Confirm"
+msgstr "اعتماد"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "Courses:"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.actions.act_window,help:education_accounting.education_bank_list_action
+msgid "Create the first bank"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.actions.act_window,help:education_accounting.education_accounting_list_action
+msgid "Create the first education accounting"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.actions.act_window,help:education_accounting.education_safe_list_action
+msgid "Create the first safe"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__create_uid
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__create_uid
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__create_uid
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__create_uid
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__create_date
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__create_date
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__create_date
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__create_date
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__currency_type
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__currency_type
+msgid "Currency Type"
+msgstr "نوع العملة"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__year
+msgid "Date "
+msgstr "التاريخ"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__date_from
+msgid "Date from"
+msgstr "التاريخ من"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "Date from:"
+msgstr "التاريخ من"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__date_to
+msgid "Date to"
+msgstr " الي"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "Date to:"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__display_name
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__display_name
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__display_name
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__display_name
+#: model:ir.model.fields,field_description:education_accounting.field_report_education_accounting_account_wizerd_template__display_name
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields.selection,name:education_accounting.selection__education_accounting__currency_type__usd
+#: model:ir.model.fields.selection,name:education_accounting.selection__payment_method__currency_type__usd
+msgid "Dollar"
+msgstr "دولار"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_view_form
+msgid "Done"
+msgstr "تم"
+
+#. module: education_accounting
+#: model:ir.model.fields.selection,name:education_accounting.selection__education_accounting__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_view_form
+msgid "Education Accounting"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_safe_view_id
+msgid "Eduction Safe"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "Email:info@napata.net"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__the_fees
+msgid "Fees"
+msgstr "المبلغ"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_view_form
+msgid "Financial Details"
+msgstr "التفاصيل المالية"
+
+#. module: education_accounting
+#: model:ir.actions.report,name:education_accounting.action_education_account_pdf_report
+msgid "Financial report"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_follower_ids
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_follower_ids
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_channel_ids
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_channel_ids
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_partner_ids
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_partner_ids
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__id
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__id
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__id
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__id
+#: model:ir.model.fields,field_description:education_accounting.field_report_education_accounting_account_wizerd_template__id
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__id
+msgid "ID"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_education_accounting__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_bank_bank__message_needaction
+#: model:ir.model.fields,help:education_accounting.field_bank_bank__message_unread
+#: model:ir.model.fields,help:education_accounting.field_education_accounting__message_needaction
+#: model:ir.model.fields,help:education_accounting.field_education_accounting__message_unread
+#: model:ir.model.fields,help:education_accounting.field_safe_safe__message_needaction
+#: model:ir.model.fields,help:education_accounting.field_safe_safe__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_bank_bank__message_has_error
+#: model:ir.model.fields,help:education_accounting.field_education_accounting__message_has_error
+#: model:ir.model.fields,help:education_accounting.field_safe_safe__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_payment_method_wizerd
+msgid "Invoice"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_is_follower
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_is_follower
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__money_type
+msgid "Journal"
+msgstr "الدفتر"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report____last_update
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank____last_update
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting____last_update
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method____last_update
+#: model:ir.model.fields,field_description:education_accounting.field_report_education_accounting_account_wizerd_template____last_update
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__write_uid
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__write_uid
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__write_uid
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__write_uid
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__write_date
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__write_date
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__write_date
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__write_date
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__level_id
+msgid "Level"
+msgstr "المستوي الدراسي"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields.selection,name:education_accounting.selection__education_accounting__type_of_fees__management
+msgid "Management"
+msgstr ""
+
+#. module: education_accounting
+#: model:res.groups,name:education_accounting.account_manager_group
+msgid "Manager"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model,name:education_accounting.model_payment_method
+msgid "Membership Invoice"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_has_error
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_has_error
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_ids
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_ids
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__money_type
+msgid "Method Of Payment"
+msgstr "طريقة الدفع"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_view_form
+msgid "Mr. / Respected Financial Manager"
+msgstr "السيد /المسئول المالي"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "NAPATA COLLEGE"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__student_id
+msgid "Name"
+msgstr "الاسم"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__name
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__bank_id
+msgid "Name of Bank"
+msgstr " اسم البنك"
+
+#. module: education_accounting
+#: code:addons/education_accounting/models/configuration.py:0
+#, python-format
+msgid "Name of Bank  Must Be Only Letters"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.constraint,message:education_accounting.constraint_bank_bank_name_unique
+msgid "Name of Bank Must Be Unique"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__safe_id
+msgid "Name of Cash"
+msgstr "اسم الخذنة"
+
+#. module: education_accounting
+#: code:addons/education_accounting/models/accounting.py:0
+#: code:addons/education_accounting/models/accounting.py:0
+#: code:addons/education_accounting/models/accounting.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_needaction_counter
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_needaction_counter
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_has_error_counter
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_has_error_counter
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_bank_bank__message_needaction_counter
+#: model:ir.model.fields,help:education_accounting.field_education_accounting__message_needaction_counter
+#: model:ir.model.fields,help:education_accounting.field_safe_safe__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_bank_bank__message_has_error_counter
+#: model:ir.model.fields,help:education_accounting.field_education_accounting__message_has_error_counter
+#: model:ir.model.fields,help:education_accounting.field_safe_safe__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_bank_bank__message_unread_counter
+#: model:ir.model.fields,help:education_accounting.field_education_accounting__message_unread_counter
+#: model:ir.model.fields,help:education_accounting.field_safe_safe__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_payment_method_wizerd
+msgid "Ok"
+msgstr "موافق"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "Open Academy Courses detail"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.actions.act_window,name:education_accounting.account_report_wizerd_actions
+#: model_terms:ir.ui.view,arch_db:education_accounting.view_account_report_wizerd
+msgid "PDF Report"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.actions.act_window,name:education_accounting.action_membership_invoice_view
+msgid "Payment Method"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_view_form
+#: model_terms:ir.ui.view,arch_db:education_accounting.view_account_report_wizerd
+msgid "Print"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__program_id
+msgid "Program"
+msgstr "البرنامج الدراسي"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__receipt_code
+msgid "Receipt Number"
+msgstr "رقم الايصال"
+
+#. module: education_accounting
+#: model:ir.ui.menu,name:education_accounting.menu_general_settings_report
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "Responsible:"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.actions.act_window,name:education_accounting.education_safe_list_action
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_safe_viwe_search
+msgid "Safe"
+msgstr "الخذنة"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__semester_id
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__semester_id
+msgid "Semester"
+msgstr "الفصل الدراسي"
+
+#. module: education_accounting
+#: model:ir.actions.report,name:education_accounting.report_session
+msgid "Session Report"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields.selection,name:education_accounting.selection__education_accounting__type_of_fees__stady
+msgid "Stady"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_education_accounting__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_view_form
+msgid "Student Full Name"
+msgstr "اسم الطالب رباعي"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__student_id
+#: model:ir.model.fields,field_description:education_accounting.field_payment_method__student_id
+msgid "Student Name"
+msgstr "اسم الطالب"
+
+#. module: education_accounting
+#: model:ir.model.fields.selection,name:education_accounting.selection__education_accounting__currency_type__sd
+#: model:ir.model.fields.selection,name:education_accounting.selection__payment_method__currency_type__sd
+msgid "Sudanese Bound"
+msgstr "جنية سوداني"
+
+#. module: education_accounting
+#: model:res.groups,name:education_accounting.account_system_admin_group
+msgid "System Admin"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "Tel :+249112203333"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__the_amount
+msgid "The Amount"
+msgstr "المبلغ كتابة"
+
+#. module: education_accounting
+#: model:ir.model.constraint,message:education_accounting.constraint_safe_safe_name_unique
+msgid "The Name Of Cash Must Be Unique"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__type_of_fees
+msgid "Type Of Fees"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_education_accounting__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__form_number
+msgid "University ID"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_unread
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_unread
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_bank_bank__message_unread_counter
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__message_unread_counter
+#: model:ir.model.fields,field_description:education_accounting.field_safe_safe__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: education_accounting
+#: model:res.groups,name:education_accounting.account_users_group
+msgid "User"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model,name:education_accounting.model_account_pdf_report
+msgid "account Report"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model,name:education_accounting.model_bank_bank
+msgid "add bank Name"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model,name:education_accounting.model_safe_safe
+msgid "add cash  Name"
+msgstr "اسم الخذنة"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_bank_tree_view
+msgid "bank tree"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_tree_view
+msgid "calculation average tree"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_safe_tree_view
+msgid "cash tree"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_view_form
+msgid "confirm"
+msgstr "ترحيل"
+
+#. module: education_accounting
+#: model:ir.model.fields.selection,name:education_accounting.selection__education_accounting__state__done
+msgid "done"
+msgstr "تم"
+
+#. module: education_accounting
+#: model:ir.actions.act_window,name:education_accounting.education_accounting_list_action
+msgid "education accounting"
+msgstr "الحسابات"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_search_view
+msgid "education accounting tree"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_safe_safe__name
+msgid "enter Name of Safe"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,help:education_accounting.field_bank_bank__name
+msgid "enter Name of bank"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model,name:education_accounting.model_education_accounting
+msgid "information accounting"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.education_accounting_view_form
+msgid "pay Method"
+msgstr "اختار طريقة الدفع"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__program_id
+msgid "program"
+msgstr "البرنامج الدراسي"
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__register_office
+msgid "register Office "
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.ui.menu,name:education_accounting.education_accounting_report
+msgid "report"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model,name:education_accounting.model_report_education_accounting_account_wizerd_template
+msgid "report.education_accounting.account_wizerd_template"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_account_pdf_report__level_id
+msgid "the level"
+msgstr "المستوي الدراسي"
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "www:napata.net"
+msgstr ""
+
+#. module: education_accounting
+#: model:ir.model.fields,field_description:education_accounting.field_education_accounting__presentation
+msgid "yes "
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "اسم الطالب"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "البرنامج"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "الفصل الدراسي"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "المبلغ المدفوع"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "المستوي"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.delivering_financial_template
+msgid "كليــــــــــــــــة نبتـــــــــة"
+msgstr ""
+
+#. module: education_accounting
+#: model_terms:ir.ui.view,arch_db:education_accounting.account_wizerd_template
+msgid "متسلسل"
+msgstr ""

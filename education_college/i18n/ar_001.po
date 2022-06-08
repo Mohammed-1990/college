@@ -1,0 +1,3332 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* education_college
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-23 09:34+0000\n"
+"PO-Revision-Date: 2022-01-23 09:34+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_study_fees__foriegn_register_fees
+msgid " Foreig Register"
+msgstr "رسوم التسجيل"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_study_fees__foreigners_study
+msgid " Foreig Study"
+msgstr "الرسوم الدراسية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__st_phone
+msgid " Phone Number one"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_study_fees__sdn_register_fees
+msgid " Sudanes Register"
+msgstr "رسوم التسجيل"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__after_discount
+msgid " The Fees After Discount"
+msgstr "الرسوم بعد التخفيض"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__form_health__educational_level__university
+msgid " University"
+msgstr "جامعي"
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_other_revenue
+msgid " add revenue type information "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_semester_semester
+msgid " add semester information"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_specialization_specialization
+msgid " add specialization information  "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__discount_prcentage__10
+msgid "10%"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__installment__one
+msgid "100%"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__discount_prcentage__20
+msgid "20%"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__discount_prcentage__30
+msgid "30%"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__discount_prcentage__40
+msgid "40%"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__installment__two
+msgid "50%"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid ":  التاريخ"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid ""
+": اسم الطالب\n"
+"                                    <br/>\n"
+"                                     _____________________________ :التوقيع"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid ": اسم الطالب / الطالبة"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+msgid ""
+": اسم ولي امر الطالب\n"
+"                                    <br/>\n"
+"\n"
+"                                    _____________________________ :التوقيع"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid ""
+": اسم ولي امر الطالب\n"
+"                                    <br/>\n"
+"                                    _____________________________ :التوقيع"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_information_template
+msgid ": الاسم"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_information_template
+msgid ": الرقم الجامعي"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid ": العام الدراسي"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_information_template
+msgid ": الفصل الدراسي"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid ":الاقرار"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.kanban_view_student
+msgid "<span style=\"color:blue;\"> الرقم الجامعي :</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.kanban_view_student
+msgid "<span style=\"color:blue;\"> الفصل الدراسي : </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.kanban_view_student
+msgid "<span style=\"color:blue;\">البرانامج :</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.kanban_view_student
+msgid "<span style=\"color:blue;\">المستوي الدراسي:</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>  :  ولي امر الطالب </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>  : :رقم الهاتف  </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>  : اسم المدرسة  </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>  : تلفونه </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>  :الجنس</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>  :توقيع منسق البرنامج</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>  :مكان الميلاد </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span> :اسم الطالب/الطالبة</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span> :التوقيع </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span> :النسبة  </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span> :تاريخ الميلاد</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span> :توقيع الطالب/الطالبة</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span> :توقيع المسجل</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span> :توقيع الوكيل</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span> :رقم الموبايل الثاني</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span> :رقم الموبايل</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span> :رقم الواتساب </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span> :مهنته </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>:   صلة القرابة  </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>:   نوع القبول </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>:  :البريد الالكتروني </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>: الحالة الاجتماعية </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>: الرقم الوطني </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:اسباب تقديم الاستقالة </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:اسم أمين الشؤون العلمية</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:اسم البرنامج</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:اسم المسجل</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:اسم الوكيل</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:اسم منسق البرنامج </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:التاريخ </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:التاريخ</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>:الجنسية</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>:الديانة </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid ""
+"<span>:الموقف الاكاديمي للطالب/الطالبة حتى تاريخ تقديمه للاستقالة </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:تاريخ القبول بالكلية</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:توصية أمين الشؤون العلمية </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:توصية منسق البرنامج فيما يختص بالإستقالة </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<span>:عنوانه </span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>:مكان الامتحان</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<span>رقم الجلوس:</span>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "<strong>  :-أولا: معلومات تملأ بواسطة الطالب</strong>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+msgid "<strong>استمارة تسجيل  </strong>"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "<strong>استمارة تقديم  </strong>"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_level_level__name
+#: model:ir.ui.menu,name:education_college.menu_level
+#: model_terms:ir.ui.view,arch_db:education_college.education_level_viwe_search
+#: model_terms:ir.ui.view,arch_db:education_college.education_leveln_view_form
+msgid "Academic  Level"
+msgstr "المستوي الاكاديمي"
+
+#. module: education_college
+#: code:addons/education_college/models/configuration.py:0
+#, python-format
+msgid "Academic  Level  Must Be Only Letters"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.constraint,message:education_college.constraint_level_level_name_unique
+msgid "Academic  Level Must Be Unique"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_level_tree_view
+msgid "Academic  Level tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_level_list_action
+msgid "Academic Level"
+msgstr "المستويات الدراسية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__academic_position
+msgid "Academic Position"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_old_student__academic_profile
+msgid "Academic Profile "
+msgstr "الملف الأكاديمي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__level_id
+msgid "Academic level"
+msgstr "المستوي الدراسي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__accept_year
+msgid "Accept year "
+msgstr "عام القبول"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__acceptance_type
+msgid "Acceptance Type"
+msgstr "نوع القبول"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__accreditation_signature
+msgid "Accreditation signature"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_needaction
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__add_year
+msgid "Add Year"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__fother_address
+#: model:ir.model.fields,field_description:education_college.field_old_student__fother_address
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__fother_address
+msgid "Address"
+msgstr "العنوان"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__unit
+msgid "Administrative unit"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_new_student_view_form
+msgid "Admission"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__old_accept_type
+#: model:ir.model.fields,field_description:education_college.field_old_student__old_accept_type
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__old_accept_type
+msgid "Admission After First Year"
+msgstr "نوع القبول"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__admission_book
+#: model:ir.model.fields,field_description:education_college.field_old_student__admission_book
+msgid "Admission Book"
+msgstr "دليل القبول"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_admission_pdf_report
+#: model:ir.ui.menu,name:education_college.education_admission_pdf_report_menu
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_pdf_report_form_view
+msgid "Admission PDF Report"
+msgstr "بيانات الطلاب الجد"
+
+#. module: education_college
+#: model:ir.actions.report,name:education_college.action_education_admission_pdf_report
+msgid "Admission Pdf Report"
+msgstr "بيانات الطلاب الجد"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__accept_year
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__year_stady
+#: model:ir.model.fields,field_description:education_college.field_new_admission__accept_year
+#: model:ir.model.fields,field_description:education_college.field_new_admission__year_stady
+#: model:ir.model.fields,field_description:education_college.field_new_student__year_stady
+#: model:ir.model.fields,field_description:education_college.field_old_student__year_stady
+msgid "Admission Year"
+msgstr "عام القبول"
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_admission_root
+msgid "Admissions"
+msgstr "القبول"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__agent_name
+msgid "Agent Name"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_resignation_request_view_id
+msgid "Agent Recommendation"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__agent_signature
+msgid "Agent signature"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "Alreydh-Khartoum/Sudan"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__applicant
+#: model:ir.model.fields,field_description:education_college.field_old_student__applicant
+msgid "Applicant  Name"
+msgstr "الاسم"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Applicant Information"
+msgstr "بيانات ولي  الامر"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_of_certificate__arabic
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__type_of_certificate__arabic
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_of_certificate__arabic
+msgid "Arabic"
+msgstr "عربية"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Are you sure you want to  Make a payment?"
+msgstr "هل تريد اجراء عملية مالية للطالب ؟"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Are you sure you want to do discounts?"
+msgstr "هل تريد اجراء  خصم  للطالب ؟"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Are you sure you want to do medical examination?"
+msgstr "هل تريد اجراء الفحص الطبي للطالب ؟"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_attachment_count
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+msgid "Attachments"
+msgstr "المرفقات"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__certificate_level__bachelors
+msgid "Bachelors"
+msgstr "بيكالوريوس"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__birth_date
+msgid "Barth Day"
+msgstr "تاريخ الميلاد"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_new_student_information_list_action
+#: model:ir.actions.act_window,name:education_college.education_old_student_information_list_action
+#: model:ir.ui.menu,name:education_college.menu_basic_information_root
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_viwe_search
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_viwe_search
+msgid "Basic Information"
+msgstr "بيانات الطالب الاساسية"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_batch_list_action
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__batch_id
+#: model:ir.model.fields,field_description:education_college.field_create_payment__batch_id
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__batch_id
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__batch_id
+#: model:ir.model.fields,field_description:education_college.field_new_admission__batch_id
+#: model:ir.model.fields,field_description:education_college.field_new_student__batch_id
+#: model:ir.model.fields,field_description:education_college.field_old_student__batch_id
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__batch_id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__batch_id
+#: model:ir.ui.menu,name:education_college.menu_batch
+#: model_terms:ir.ui.view,arch_db:education_college.education_batch_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_batch_viwe_search
+msgid "Batch"
+msgstr "الدفعة"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__name
+msgid "Batch Name"
+msgstr "الدفعة"
+
+#. module: education_college
+#: code:addons/education_college/models/configuration.py:0
+#, python-format
+msgid "Batch Name  Must Be Only Letters"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_batch_tree_view
+msgid "Batch tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__birth_date
+#: model:ir.model.fields,field_description:education_college.field_old_student__birth_date
+msgid "Birth Date"
+msgstr "تاريخ الميلاد"
+
+#. module: education_college
+#: code:addons/education_college/models/student_information.py:0
+#, python-format
+msgid "Birth Date can't be greater than current date!"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__program_id
+msgid "Brogram"
+msgstr "البرنامج الدراسي"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__state__cancel
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__state__cancel
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__state__cancel
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__state__cancel
+#: model_terms:ir.ui.view,arch_db:education_college.create_create_payment_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_new_student_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_old_student_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_pdf_report_form_view
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_pdf_report_form_view
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_descount_wizard_form_view
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_old_student__certificate_completion
+msgid "Certificate Completion"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_old_student__certificate_details
+msgid "Certificate Details"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_old_student__certificate_level
+msgid "Certificate Level"
+msgstr "نوع الشهادة الجامعة"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_old_student__certificate_other
+msgid "Certificate Other"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__certificate_level
+msgid "Certificate level"
+msgstr "نوع الشهادة الجامعة"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__certificate_type
+msgid "Certificate type Fees"
+msgstr "نوع القبول"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__religion__christian
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__religion__christian
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__religion__christian
+msgid "Christian "
+msgstr "مسيحي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__chronic_diseases
+msgid "Chronic Diseases "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_program_program__code
+msgid "Code"
+msgstr "الكود"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_study_fees__college_id
+msgid "Collage"
+msgstr "اسم الكلية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__college_id
+msgid "Collage Name"
+msgstr "اسم الكلية"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_college_list_action
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__college_id
+#: model:ir.model.fields,field_description:education_college.field_create_payment__college_id
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__college_id
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__college_id
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__college
+#: model:ir.model.fields,field_description:education_college.field_new_admission__college_id
+#: model:ir.model.fields,field_description:education_college.field_new_student__college_id
+#: model:ir.model.fields,field_description:education_college.field_old_student__college_id
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__college_id
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__college_id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__college_id
+#: model:ir.ui.menu,name:education_college.menu_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_college_viwe_search
+msgid "College"
+msgstr "اسم الكلية"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_resignation_request_view_id
+msgid "College Dean Accreditation"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_college_college__name
+#: model:ir.model.fields,field_description:education_college.field_program_program__college_id
+msgid "College Name"
+msgstr "اسم الكلية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__date_admission
+msgid "College admission date"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_collage_tree_view
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_tree_view
+#: model_terms:ir.ui.view,arch_db:education_college.education_type_of_admission_tree_view
+msgid "College tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__comm_new
+#: model:ir.model.fields,field_description:education_college.field_old_student__comm_new
+#: model:ir.model.fields,field_description:education_college.field_old_student__comm_old
+msgid "Comment"
+msgstr "اقرار"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_old_student__conduct_certificate
+msgid "Conduct Certificate"
+msgstr "شهادة التفاصيل"
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_general_settings_root
+msgid "Configuration"
+msgstr "الاعدادات"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__state__confirm
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__state__confirm
+#: model:ir.model.fields.selection,name:education_college.selection__revenue_revenue__state__confirm
+#: model:ir.model.fields.selection,name:education_college.selection__study_fees__state__confirm
+#: model_terms:ir.ui.view,arch_db:education_college.education_revenue_fees_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_study_fees_view_form
+msgid "Confirm"
+msgstr "تم تأكيد"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__state__confirm
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__state__confirm
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_health_insurance_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Contact Information"
+msgstr "بيانات الاتصال"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_request__coordinator_name
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__coordinator_name
+msgid "Coordinator Name "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__coordinator_recommend
+msgid "Coordinator Recommendation "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_request__Coordinator_signature
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__Coordinator_signature
+msgid "Coordinator signature"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_register_pdf_report_template
+msgid "Courses:"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__user_id
+#: model:ir.model.fields,field_description:education_college.field_new_admission__user_id
+#: model:ir.model.fields,field_description:education_college.field_new_student__user_id
+#: model:ir.model.fields,field_description:education_college.field_old_student__user_id
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__user_id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__user_id
+#: model:ir.model.fields,field_description:education_college.field_study_fees__user_id
+msgid "Creant User "
+msgstr "مستخدم النظام"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_descount_wizard_form_view
+msgid "Create Discount"
+msgstr "انشاء الخصم"
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_create_payment
+msgid "Create Make a payment"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.create_create_payment_form
+msgid "Create Payment"
+msgstr "انشاء فاتورة"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.student_discounts_wizard_action
+msgid "Create Student Discount"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_student_discounts_wizard
+msgid "Create User for selected Student(s)"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_college_list_action
+#: model_terms:ir.actions.act_window,help:education_college.education_student_registrar_list_action
+msgid "Create the first College"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_batch_list_action
+msgid "Create the first batch"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_admission_new_student_list_action
+msgid "Create the first new student"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_new_student_information_list_action
+msgid "Create the first new student information"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_admission_old_student_list_action
+msgid "Create the first old student"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_old_student_information_list_action
+msgid "Create the first old student information"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_other_revenue_list_action
+msgid "Create the first other revenue"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_program_list_action
+msgid "Create the first program"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.resignation_request_list_action
+msgid "Create the first resignation request"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_revenue_fees_list_action
+msgid "Create the first revenue fees"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_semester_list_action
+msgid "Create the first semester"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_specialization_list_action
+msgid "Create the first specialization"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_study_fees_list_action
+msgid "Create the first student fees"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.health_insurance_list_action
+msgid "Create the first study health insurance"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_type_of_admission_list_action
+msgid "Create the first type of admission\"&gt;"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.actions.act_window,help:education_college.education_level_list_action
+msgid "Create the first type of level"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__create_uid
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__create_uid
+#: model:ir.model.fields,field_description:education_college.field_college_college__create_uid
+#: model:ir.model.fields,field_description:education_college.field_create_payment__create_uid
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__create_uid
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__create_uid
+#: model:ir.model.fields,field_description:education_college.field_form_health__create_uid
+#: model:ir.model.fields,field_description:education_college.field_form_request__create_uid
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__create_uid
+#: model:ir.model.fields,field_description:education_college.field_level_level__create_uid
+#: model:ir.model.fields,field_description:education_college.field_new_admission__create_uid
+#: model:ir.model.fields,field_description:education_college.field_new_student__create_uid
+#: model:ir.model.fields,field_description:education_college.field_old_student__create_uid
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__create_uid
+#: model:ir.model.fields,field_description:education_college.field_program_program__create_uid
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__create_uid
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__create_uid
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__create_uid
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__create_uid
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__create_uid
+#: model:ir.model.fields,field_description:education_college.field_study_fees__create_uid
+#: model:ir.model.fields,field_description:education_college.field_type_admission__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__create_date
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__create_date
+#: model:ir.model.fields,field_description:education_college.field_college_college__create_date
+#: model:ir.model.fields,field_description:education_college.field_create_payment__create_date
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__create_date
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__create_date
+#: model:ir.model.fields,field_description:education_college.field_form_health__create_date
+#: model:ir.model.fields,field_description:education_college.field_form_request__create_date
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__create_date
+#: model:ir.model.fields,field_description:education_college.field_level_level__create_date
+#: model:ir.model.fields,field_description:education_college.field_new_admission__create_date
+#: model:ir.model.fields,field_description:education_college.field_new_student__create_date
+#: model:ir.model.fields,field_description:education_college.field_old_student__create_date
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__create_date
+#: model:ir.model.fields,field_description:education_college.field_program_program__create_date
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__create_date
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__create_date
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__create_date
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__create_date
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__create_date
+#: model:ir.model.fields,field_description:education_college.field_study_fees__create_date
+#: model:ir.model.fields,field_description:education_college.field_type_admission__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__currency_type
+msgid "Currency Type"
+msgstr "نوع العملة"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__date
+#: model:ir.model.fields,field_description:education_college.field_form_request__coordinator_date
+#: model:ir.model.fields,field_description:education_college.field_form_request__date
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__accreditation_date
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__agent_date
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__coordinator_date
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__data
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__registrar_date
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__scientific_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_register_pdf_report_template
+msgid "Date from:"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__birth_date
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_register_pdf_report_template
+msgid "Date to:"
+msgstr ""
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_admission_old_students
+#: model:ir.ui.menu,name:education_college.menu_old_students_basic_information
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_old_student_viwe_search
+msgid "Degree Holder"
+msgstr "حملة الدرجات العلمية"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__certificate_level__diploma
+msgid "Diploma"
+msgstr "دبلوم"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__discount_fees
+msgid "Discount Percentage %"
+msgstr "نسبة التخفيض"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__discount_prcentage
+msgid "Discount Prcentage"
+msgstr "نسبة التخفيض"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__discount_type
+msgid "Discount Type"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__display_name
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__display_name
+#: model:ir.model.fields,field_description:education_college.field_college_college__display_name
+#: model:ir.model.fields,field_description:education_college.field_create_payment__display_name
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__display_name
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__display_name
+#: model:ir.model.fields,field_description:education_college.field_form_health__display_name
+#: model:ir.model.fields,field_description:education_college.field_form_request__display_name
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__display_name
+#: model:ir.model.fields,field_description:education_college.field_level_level__display_name
+#: model:ir.model.fields,field_description:education_college.field_new_admission__display_name
+#: model:ir.model.fields,field_description:education_college.field_new_student__display_name
+#: model:ir.model.fields,field_description:education_college.field_old_student__display_name
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__display_name
+#: model:ir.model.fields,field_description:education_college.field_program_program__display_name
+#: model:ir.model.fields,field_description:education_college.field_report_education_college_education_admission_template__display_name
+#: model:ir.model.fields,field_description:education_college.field_report_education_college_education_register_pdf_report_template__display_name
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__display_name
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__display_name
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__display_name
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__display_name
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__display_name
+#: model:ir.model.fields,field_description:education_college.field_study_fees__display_name
+#: model:ir.model.fields,field_description:education_college.field_type_admission__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__doctor_comment
+msgid "Doctor Comment"
+msgstr "ملاحظات الطبيب"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__doctor_name
+msgid "Doctor Name"
+msgstr "اسم الطبيب"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__currency_type__usd
+msgid "Dollar"
+msgstr "دولاار"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_new_student_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_old_student_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_revenue_fees_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_study_fees_view_form
+msgid "Done"
+msgstr "تم"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__state__draft
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__state__draft
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__state__draft
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__state__draft
+#: model:ir.model.fields.selection,name:education_college.selection__revenue_revenue__state__draft
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__state__draft
+#: model:ir.model.fields.selection,name:education_college.selection__study_fees__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__e_mail
+msgid "E-mail "
+msgstr "البريد الالكتروني"
+
+#. module: education_college
+#: model:ir.module.category,name:education_college.category_education
+msgid "Education"
+msgstr ""
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_education_erp_root
+msgid "Education Erp"
+msgstr "نظام ادارة الكليات"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Educational Information"
+msgstr "البيانات الدراسية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__educational_level
+msgid "Educational Level"
+msgstr "المستوي التعليمي"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_college_view_id
+msgid "Eduction Collage"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__email
+#: model:ir.model.fields,field_description:education_college.field_old_student__email
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__email
+msgid "Email"
+msgstr "البريد الالكتروني"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.custom_session_header_footer
+msgid "Email:"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "Email:info@napata.net"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__exam_location
+msgid "Exam location"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__admission_pdf_report__admission_type__expats
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__acceptance_type__expats
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__admission_type__expats
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_acceptance__expats
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__certificate_type__expats
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_acceptance__expats
+#: model:ir.model.fields.selection,name:education_college.selection__type_admission__admission_type__expats
+msgid "Expats"
+msgstr "وافدين"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__facebook
+#: model:ir.model.fields,field_description:education_college.field_old_student__facebook
+msgid "Face Book"
+msgstr "فيس بك"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_resignation_request_view_id
+msgid "Faculty Registrar"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__revenue_type_id
+msgid "Fees Type "
+msgstr "نوع الرسوم"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_stady_fees_tree_view
+msgid "Fees tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__after_discount
+msgid "Fees ِAfter Discount"
+msgstr "الرسوم بعد التخفيض"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__gender__female
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__gender__female
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__gender__female
+msgid "Female"
+msgstr "انثي"
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_finance_root
+msgid "Finance"
+msgstr "المالية"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Financial Details"
+msgstr "التفاصيل المالية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__first
+#: model:ir.model.fields,field_description:education_college.field_new_admission__first
+#: model:ir.model.fields,field_description:education_college.field_new_student__first
+#: model:ir.model.fields,field_description:education_college.field_old_student__first
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__student_state__first_semester
+msgid "First Semester"
+msgstr "السمستر الاول"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_follower_ids
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_channel_ids
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_partner_ids
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__for_foreig
+msgid "Foreign "
+msgstr "المبلغ  للاجانب"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__nationality__foreigner
+#: model:ir.model.fields.selection,name:education_college.selection__type_admission__nationality__foreigner
+msgid "Foreigners"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__student_number
+#: model:ir.model.fields,field_description:education_college.field_new_admission__student_number
+#: model:ir.model.fields,field_description:education_college.field_new_student__form_number
+#: model:ir.model.fields,field_description:education_college.field_old_student__form_number
+#: model:ir.model.fields,field_description:education_college.field_res_partner__form_numper
+#: model:ir.model.fields,field_description:education_college.field_res_users__form_numper
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__form_number
+msgid "Form Number"
+msgstr "رقم الاستمارة"
+
+#. module: education_college
+#: model:ir.actions.report,name:education_college.form_resignation
+msgid "Form Report Health"
+msgstr ""
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_forms_root
+msgid "Forms"
+msgstr "الاستمارات"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__name
+#: model:ir.model.fields,field_description:education_college.field_old_student__name
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__name
+msgid "Full Name"
+msgstr "اسم الطالب رباعي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__name
+#: model:ir.model.fields,field_description:education_college.field_new_admission__name
+msgid "Full name"
+msgstr "اسم الطالب رباعي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__gender
+#: model:ir.model.fields,field_description:education_college.field_old_student__gender
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__gender
+msgid "Gender"
+msgstr "النوع"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__admission_pdf_report__admission_type__general
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__acceptance_type__general
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__admission_type__general
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_acceptance__general
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__certificate_type__general
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_acceptance__general
+#: model:ir.model.fields.selection,name:education_college.selection__type_admission__admission_type__general
+msgid "General acceptance"
+msgstr "قبول عام"
+
+#. module: education_college
+#: model:res.groups,name:education_college.education_discount_group
+msgid "Grand Discount"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__health_center
+msgid "Health Center "
+msgstr "اسم المركز الصحي"
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_revenue_fees
+msgid "Health Insurance"
+msgstr "التامين الصحي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__school_certificate
+#: model:ir.model.fields,field_description:education_college.field_old_student__school_certificate
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__school_certificate
+msgid "High School Certificate"
+msgstr "صورة من الشهادة الثانوية"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_health_insurance_view_form
+msgid "Home Adress"
+msgstr "بيانات السكن"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__home_number
+msgid "Home Number "
+msgstr "رقم المنزل"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__hospital
+msgid "Hospital "
+msgstr "اسم المستشفي"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+msgid "How did you hear about the college"
+msgstr "من اي مصدر عرفتة عن الكلية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__id
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__id
+#: model:ir.model.fields,field_description:education_college.field_college_college__id
+#: model:ir.model.fields,field_description:education_college.field_create_payment__id
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__id
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__id
+#: model:ir.model.fields,field_description:education_college.field_form_health__id
+#: model:ir.model.fields,field_description:education_college.field_form_request__id
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__id
+#: model:ir.model.fields,field_description:education_college.field_level_level__id
+#: model:ir.model.fields,field_description:education_college.field_new_admission__id
+#: model:ir.model.fields,field_description:education_college.field_new_student__id
+#: model:ir.model.fields,field_description:education_college.field_old_student__id
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__id
+#: model:ir.model.fields,field_description:education_college.field_program_program__id
+#: model:ir.model.fields,field_description:education_college.field_report_education_college_education_admission_template__id
+#: model:ir.model.fields,field_description:education_college.field_report_education_college_education_register_pdf_report_template__id
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__id
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__id
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__id
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__id
+#: model:ir.model.fields,field_description:education_college.field_study_fees__id
+#: model:ir.model.fields,field_description:education_college.field_type_admission__id
+msgid "ID"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__id_document
+msgid "Identification Card"
+msgstr "اثبات الشخصية"
+
+#. module: education_college
+#: model:ir.model.fields,help:education_college.field_batch_batch__message_needaction
+#: model:ir.model.fields,help:education_college.field_batch_batch__message_unread
+#: model:ir.model.fields,help:education_college.field_college_college__message_needaction
+#: model:ir.model.fields,help:education_college.field_college_college__message_unread
+#: model:ir.model.fields,help:education_college.field_degree_holder__message_needaction
+#: model:ir.model.fields,help:education_college.field_degree_holder__message_unread
+#: model:ir.model.fields,help:education_college.field_form_health__message_needaction
+#: model:ir.model.fields,help:education_college.field_form_health__message_unread
+#: model:ir.model.fields,help:education_college.field_form_request__message_needaction
+#: model:ir.model.fields,help:education_college.field_form_request__message_unread
+#: model:ir.model.fields,help:education_college.field_form_resignation__message_needaction
+#: model:ir.model.fields,help:education_college.field_form_resignation__message_unread
+#: model:ir.model.fields,help:education_college.field_level_level__message_needaction
+#: model:ir.model.fields,help:education_college.field_level_level__message_unread
+#: model:ir.model.fields,help:education_college.field_new_admission__message_needaction
+#: model:ir.model.fields,help:education_college.field_new_admission__message_unread
+#: model:ir.model.fields,help:education_college.field_new_student__message_needaction
+#: model:ir.model.fields,help:education_college.field_new_student__message_unread
+#: model:ir.model.fields,help:education_college.field_old_student__message_needaction
+#: model:ir.model.fields,help:education_college.field_old_student__message_unread
+#: model:ir.model.fields,help:education_college.field_other_revenue__message_needaction
+#: model:ir.model.fields,help:education_college.field_other_revenue__message_unread
+#: model:ir.model.fields,help:education_college.field_program_program__message_needaction
+#: model:ir.model.fields,help:education_college.field_program_program__message_unread
+#: model:ir.model.fields,help:education_college.field_revenue_revenue__message_needaction
+#: model:ir.model.fields,help:education_college.field_revenue_revenue__message_unread
+#: model:ir.model.fields,help:education_college.field_semester_semester__message_needaction
+#: model:ir.model.fields,help:education_college.field_semester_semester__message_unread
+#: model:ir.model.fields,help:education_college.field_specialization_specialization__message_needaction
+#: model:ir.model.fields,help:education_college.field_specialization_specialization__message_unread
+#: model:ir.model.fields,help:education_college.field_student_registrar__message_needaction
+#: model:ir.model.fields,help:education_college.field_student_registrar__message_unread
+#: model:ir.model.fields,help:education_college.field_study_fees__message_needaction
+#: model:ir.model.fields,help:education_college.field_study_fees__message_unread
+#: model:ir.model.fields,help:education_college.field_type_admission__message_needaction
+#: model:ir.model.fields,help:education_college.field_type_admission__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,help:education_college.field_batch_batch__message_has_error
+#: model:ir.model.fields,help:education_college.field_college_college__message_has_error
+#: model:ir.model.fields,help:education_college.field_degree_holder__message_has_error
+#: model:ir.model.fields,help:education_college.field_form_health__message_has_error
+#: model:ir.model.fields,help:education_college.field_form_request__message_has_error
+#: model:ir.model.fields,help:education_college.field_form_resignation__message_has_error
+#: model:ir.model.fields,help:education_college.field_level_level__message_has_error
+#: model:ir.model.fields,help:education_college.field_new_admission__message_has_error
+#: model:ir.model.fields,help:education_college.field_new_student__message_has_error
+#: model:ir.model.fields,help:education_college.field_old_student__message_has_error
+#: model:ir.model.fields,help:education_college.field_other_revenue__message_has_error
+#: model:ir.model.fields,help:education_college.field_program_program__message_has_error
+#: model:ir.model.fields,help:education_college.field_revenue_revenue__message_has_error
+#: model:ir.model.fields,help:education_college.field_semester_semester__message_has_error
+#: model:ir.model.fields,help:education_college.field_specialization_specialization__message_has_error
+#: model:ir.model.fields,help:education_college.field_student_registrar__message_has_error
+#: model:ir.model.fields,help:education_college.field_study_fees__message_has_error
+#: model:ir.model.fields,help:education_college.field_type_admission__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_resignation_request_view_id
+msgid "Information Filled in by the Student"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__installment
+msgid "Installment"
+msgstr "نسبة القسط"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__is_clinic
+msgid "Is Clinic Book"
+msgstr "اجراء الفحص الطبي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_is_follower
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_res_partner__is_student
+#: model:ir.model.fields,field_description:education_college.field_res_users__is_student
+msgid "Is a Student"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__job
+#: model:ir.model.fields,field_description:education_college.field_old_student__job
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__job
+msgid "Job"
+msgstr "الوظيفة"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report____last_update
+#: model:ir.model.fields,field_description:education_college.field_batch_batch____last_update
+#: model:ir.model.fields,field_description:education_college.field_college_college____last_update
+#: model:ir.model.fields,field_description:education_college.field_create_payment____last_update
+#: model:ir.model.fields,field_description:education_college.field_degree_holder____last_update
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report____last_update
+#: model:ir.model.fields,field_description:education_college.field_form_health____last_update
+#: model:ir.model.fields,field_description:education_college.field_form_request____last_update
+#: model:ir.model.fields,field_description:education_college.field_form_resignation____last_update
+#: model:ir.model.fields,field_description:education_college.field_level_level____last_update
+#: model:ir.model.fields,field_description:education_college.field_new_admission____last_update
+#: model:ir.model.fields,field_description:education_college.field_new_student____last_update
+#: model:ir.model.fields,field_description:education_college.field_old_student____last_update
+#: model:ir.model.fields,field_description:education_college.field_other_revenue____last_update
+#: model:ir.model.fields,field_description:education_college.field_program_program____last_update
+#: model:ir.model.fields,field_description:education_college.field_report_education_college_education_admission_template____last_update
+#: model:ir.model.fields,field_description:education_college.field_report_education_college_education_register_pdf_report_template____last_update
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue____last_update
+#: model:ir.model.fields,field_description:education_college.field_semester_semester____last_update
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization____last_update
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard____last_update
+#: model:ir.model.fields,field_description:education_college.field_student_registrar____last_update
+#: model:ir.model.fields,field_description:education_college.field_study_fees____last_update
+#: model:ir.model.fields,field_description:education_college.field_type_admission____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__last
+#: model:ir.model.fields,field_description:education_college.field_new_admission__last
+#: model:ir.model.fields,field_description:education_college.field_new_student__last
+#: model:ir.model.fields,field_description:education_college.field_old_student__last
+msgid "Last Name"
+msgstr "الاسم الاخير"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__write_uid
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__write_uid
+#: model:ir.model.fields,field_description:education_college.field_college_college__write_uid
+#: model:ir.model.fields,field_description:education_college.field_create_payment__write_uid
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__write_uid
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__write_uid
+#: model:ir.model.fields,field_description:education_college.field_form_health__write_uid
+#: model:ir.model.fields,field_description:education_college.field_form_request__write_uid
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__write_uid
+#: model:ir.model.fields,field_description:education_college.field_level_level__write_uid
+#: model:ir.model.fields,field_description:education_college.field_new_admission__write_uid
+#: model:ir.model.fields,field_description:education_college.field_new_student__write_uid
+#: model:ir.model.fields,field_description:education_college.field_old_student__write_uid
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__write_uid
+#: model:ir.model.fields,field_description:education_college.field_program_program__write_uid
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__write_uid
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__write_uid
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__write_uid
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__write_uid
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__write_uid
+#: model:ir.model.fields,field_description:education_college.field_study_fees__write_uid
+#: model:ir.model.fields,field_description:education_college.field_type_admission__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__write_date
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__write_date
+#: model:ir.model.fields,field_description:education_college.field_college_college__write_date
+#: model:ir.model.fields,field_description:education_college.field_create_payment__write_date
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__write_date
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__write_date
+#: model:ir.model.fields,field_description:education_college.field_form_health__write_date
+#: model:ir.model.fields,field_description:education_college.field_form_request__write_date
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__write_date
+#: model:ir.model.fields,field_description:education_college.field_level_level__write_date
+#: model:ir.model.fields,field_description:education_college.field_new_admission__write_date
+#: model:ir.model.fields,field_description:education_college.field_new_student__write_date
+#: model:ir.model.fields,field_description:education_college.field_old_student__write_date
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__write_date
+#: model:ir.model.fields,field_description:education_college.field_program_program__write_date
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__write_date
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__write_date
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__write_date
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__write_date
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__write_date
+#: model:ir.model.fields,field_description:education_college.field_study_fees__write_date
+#: model:ir.model.fields,field_description:education_college.field_type_admission__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__level_id
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__level_id
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__level_id
+#: model:ir.model.fields,field_description:education_college.field_form_request__level_id
+#: model:ir.model.fields,field_description:education_college.field_new_admission__level_id
+#: model:ir.model.fields,field_description:education_college.field_new_student__level_id
+#: model:ir.model.fields,field_description:education_college.field_old_student__level_id
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__level_id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__level_id
+msgid "Level"
+msgstr "المستوي الدراسي"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__course__literary
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__course__literary
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__course__literary
+msgid "Literary"
+msgstr "ادبي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__local
+#: model:ir.model.fields,field_description:education_college.field_new_student__local
+#: model:ir.model.fields,field_description:education_college.field_old_student__local
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__local
+msgid "Local"
+msgstr "المحلية"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.custom_session_header_footer
+msgid "Logo"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_main_attachment_id
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Make a Discount"
+msgstr "انشاء خصم"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Make a Payment"
+msgstr "انشاء فاتورة"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.create_create_payment_wizard_action
+#: model_terms:ir.ui.view,arch_db:education_college.create_create_payment_form
+msgid "Make a payment"
+msgstr "انشاء فاتورة"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__gender__male
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__gender__male
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__gender__male
+msgid "Male"
+msgstr "رجل"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__type_of_fees__management
+msgid "Management"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__other_revenu
+msgid "Management Fees"
+msgstr ""
+
+#. module: education_college
+#: model:res.groups,name:education_college.education_manager_group
+msgid "Manager"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__social_status__married
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__social_status__married
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__social_status__married
+msgid "Married"
+msgstr "متزوج"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Medical"
+msgstr "الفحص الطبي"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Medical Examination"
+msgstr "الفحص الطبي"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__result__unfit
+msgid "Medically Unfit"
+msgstr "غير لائق طبيا"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__result__fit
+msgid "Medically fit"
+msgstr "لائق طبيا"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_has_error
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_ids
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_ids
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_ids
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_ids
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_ids
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_ids
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_ids
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_ids
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_ids
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_ids
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_ids
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_ids
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_ids
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_ids
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_ids
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_ids
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_ids
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__student_mobile
+#: model:ir.model.fields,field_description:education_college.field_old_student__student_mobile
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__student_mobile
+msgid "Mobile Number"
+msgstr "رقم الهاتف"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__mother_name
+msgid "Mother's Name "
+msgstr "اسم الوالدة"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__religion__muslim
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__religion__muslim
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__religion__muslim
+msgid "Muslim"
+msgstr "مسلم"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_information_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "NAPATA COLLEGE"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_of_id__national_number
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__type_of_id__national_number
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_of_id__national_number
+msgid "National  Number"
+msgstr "رقم وطني"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__national_card
+#: model:ir.model.fields,field_description:education_college.field_old_student__national_card
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__national_card
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_of_id__national_card
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__type_of_id__national_card
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_of_id__national_card
+msgid "National Card"
+msgstr " صورة من اثبات الشخصية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__nationality
+#: model:ir.model.fields,field_description:education_college.field_new_student__nationality_id
+#: model:ir.model.fields,field_description:education_college.field_old_student__nationality_id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__nationality_id
+#: model:ir.model.fields,field_description:education_college.field_type_admission__nationality
+msgid "Nationality"
+msgstr "الجنسية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__neighborhood
+msgid "Neighborhood "
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_tree_view
+msgid "New Student information tree"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_new_student_tree_view
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_old_student_tree_view
+msgid "New Student tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_admission_new_student_list_action
+#: model:ir.ui.menu,name:education_college.menu_admission_new_students
+#: model:ir.ui.menu,name:education_college.menu_new_students_basic_information
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_new_student_viwe_search
+msgid "New Students"
+msgstr "الطلاب الجدد"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__newspaper
+#: model:ir.model.fields,field_description:education_college.field_old_student__newspaper
+msgid "Newspaper"
+msgstr "الصحف اليومية"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__student_state__not_registered
+msgid "Not Registered"
+msgstr "غير مسجل"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_needaction_counter
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_has_error_counter
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,help:education_college.field_batch_batch__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_college_college__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_degree_holder__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_form_health__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_form_request__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_form_resignation__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_level_level__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_new_admission__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_new_student__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_old_student__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_other_revenue__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_program_program__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_revenue_revenue__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_semester_semester__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_specialization_specialization__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_student_registrar__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_study_fees__message_needaction_counter
+#: model:ir.model.fields,help:education_college.field_type_admission__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,help:education_college.field_batch_batch__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_college_college__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_degree_holder__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_form_health__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_form_request__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_form_resignation__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_level_level__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_new_admission__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_new_student__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_old_student__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_other_revenue__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_program_program__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_revenue_revenue__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_semester_semester__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_specialization_specialization__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_student_registrar__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_study_fees__message_has_error_counter
+#: model:ir.model.fields,help:education_college.field_type_admission__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,help:education_college.field_batch_batch__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_college_college__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_degree_holder__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_form_health__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_form_request__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_form_resignation__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_level_level__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_new_admission__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_new_student__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_old_student__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_other_revenue__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_program_program__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_revenue_revenue__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_semester_semester__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_specialization_specialization__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_student_registrar__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_study_fees__message_unread_counter
+#: model:ir.model.fields,help:education_college.field_type_admission__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_old_student_view_form
+msgid "Old Admission"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_admission_old_student_list_action
+msgid "Old Students"
+msgstr "الطلاب القدامي"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_template
+#: model_terms:ir.ui.view,arch_db:education_college.education_register_pdf_report_template
+msgid "Open Academy Courses detail"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__form_health__educational_level__other
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__religion__other
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__social_status__other
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_of_certificate__other
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__certificate_level__other
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__religion__other
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__social_status__other
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__type_of_certificate__other
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__religion__other
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__social_status__other
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_of_certificate__other
+msgid "Other"
+msgstr "اخري"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.create_create_payment_form
+msgid "Other Expenses Information"
+msgstr "بيانات الرسوم الاخري"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_other_revenue_list_action
+#: model:ir.model.fields,field_description:education_college.field_create_payment__revenue_id
+#: model:ir.ui.menu,name:education_college.menu_other_revenue
+#: model_terms:ir.ui.view,arch_db:education_college.education_other_revenue_search
+#: model_terms:ir.ui.view,arch_db:education_college.education_other_revenue_view_form
+msgid "Other Revenue"
+msgstr "الايرادات الاخري"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__other_fees
+msgid "Other Revenue "
+msgstr "الايرادات الاخري"
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_other_revenue_fees
+msgid "Other Revenue Fees"
+msgstr "الرسوم الاخري"
+
+#. module: education_college
+#: model:ir.model.constraint,message:education_college.constraint_other_revenue_name_unique
+msgid "Other Revenue Name  Must Be Unique"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__result__other
+msgid "Others "
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.custom_session_header_footer
+msgid "Page:"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+msgid "Parent Information"
+msgstr "بيانات ولي الامر"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_of_id__passport
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__type_of_id__passport
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_of_id__passport
+msgid "Passport"
+msgstr "جواز سفر"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__remaining_fee
+msgid "Payment Fees"
+msgstr "الرسوم المطلوبة"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__discount_type__1
+msgid "Percentage"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Personal Information"
+msgstr "البيانات الشخصية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__type_of_id
+#: model:ir.model.fields,field_description:education_college.field_old_student__type_of_id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__type_of_id
+msgid "Personality Type"
+msgstr "نوع اثبات الشخصية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__the_phone
+msgid "Phone Number"
+msgstr "رقم التلفون"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__st_moble
+msgid "Phone Number two"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.custom_session_header_footer
+msgid "Phone:"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__address
+#: model:ir.model.fields,field_description:education_college.field_old_student__address
+msgid "Place Of Birth"
+msgstr "مكان الميلاد"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__place_of_birth
+msgid "Place Of Birth "
+msgstr "مكان الميلاد"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__place_of_issue
+msgid "Place Of Issue"
+msgstr "مكان الاصدار"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_pdf_report_form_view
+#: model_terms:ir.ui.view,arch_db:education_college.education_pdf_report_form_view
+msgid "Print"
+msgstr "طباعة"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.custom_session_header_footer
+msgid "Print date:"
+msgstr "تاريخ الطباعة"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_program_list_action
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__program_id
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__program_id
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__program_id
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__program_id
+#: model:ir.model.fields,field_description:education_college.field_form_request__program
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__program
+#: model:ir.model.fields,field_description:education_college.field_new_admission__program_id
+#: model:ir.model.fields,field_description:education_college.field_new_student__program_id
+#: model:ir.model.fields,field_description:education_college.field_old_student__program_id
+#: model:ir.model.fields,field_description:education_college.field_program_program__name
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__program_id
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__program_id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__program_id
+#: model:ir.model.fields,field_description:education_college.field_study_fees__program_id
+#: model:ir.ui.menu,name:education_college.menu_program
+#: model_terms:ir.ui.view,arch_db:education_college.education_program_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_program_viwe_search
+msgid "Program"
+msgstr "البرنامج الدراسي"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_resignation_request_view_id
+msgid "Program Coordinator"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__program_fees
+msgid "Program Fees"
+msgstr "الرسو الدراسية المقررة"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_program_tree_view
+msgid "Program tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__radio
+#: model:ir.model.fields,field_description:education_college.field_old_student__radio
+msgid "Radio"
+msgstr "الازاعة"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__reasons
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__reasons_resignation
+msgid "Reasons for submitting resignation"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_resignation_request_view_id
+msgid "Recommendation of the Secretary of Scientific Affairs"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__scientific_recommend
+msgid "Recommendation of the Secretary of Scientific Affairs "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__register_fees
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__register_fees
+msgid "Register  Fees"
+msgstr "رسوم التسجيل"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__register_fees
+msgid "Register Fees"
+msgstr "رسوم التسجيل"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.create_create_payment_form
+msgid "Register Fees Information"
+msgstr "بيانات الرسوم الدراسية"
+
+#. module: education_college
+#: model:res.groups,name:education_college.education_assistant_group
+msgid "Registered Assistant"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__registrar_name
+msgid "Registrant Name "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__registrar_signature
+msgid "Registrant signature"
+msgstr ""
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_registrar_office
+#: model:ir.ui.menu,name:education_college.menu_registrar_office_root
+msgid "Registrar's Office"
+msgstr "مكتب المسجل"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__relative_relation
+#: model:ir.model.fields,field_description:education_college.field_old_student__relative_relation
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__relative_relation
+msgid "Relative Relation"
+msgstr "صلة القرابة"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__religion
+#: model:ir.model.fields,field_description:education_college.field_old_student__religion
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__religion
+msgid "Religion"
+msgstr "الديانة"
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_general_report_root
+msgid "Report"
+msgstr "التقارير"
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.education_academy_reporting
+msgid "Reporting"
+msgstr "التقارير"
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_request_resignation
+msgid "Resignation Request"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_register_pdf_report_template
+msgid "Responsible:"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__result
+msgid "Result"
+msgstr "نتيجة الفحص الطبي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__result_data
+msgid "Result Date"
+msgstr "تاريخ الفحص"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Results"
+msgstr "النتيجة"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_revenue_fees_list_action
+#: model_terms:ir.ui.view,arch_db:education_college.education_revenue_fees_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_revenue_fees_viwe_search
+msgid "Revenue Fees"
+msgstr "الايرادات الاخري"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__name
+msgid "Revenue Name"
+msgstr "اسم الايراد"
+
+#. module: education_college
+#: code:addons/education_college/models/configuration.py:0
+#, python-format
+msgid "Revenue Name  Must Be Only Letters"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__admission_pdf_report__admission_type__scholarship
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__acceptance_type__scholarship
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__admission_type__scholarship
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_acceptance__scholarship
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__certificate_type__scholarship
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_acceptance__scholarship
+#: model:ir.model.fields.selection,name:education_college.selection__type_admission__admission_type__scholarship
+msgid "Scholarship"
+msgstr "منحة دراسية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__school_name
+#: model:ir.model.fields,field_description:education_college.field_new_admission__school_name
+#: model:ir.model.fields,field_description:education_college.field_new_student__school_name
+#: model:ir.model.fields,field_description:education_college.field_old_student__school_name
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__school_name
+msgid "School Name "
+msgstr "اسم المدرسة الثانوية"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__course__scientific
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__course__scientific
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__course__scientific
+msgid "Scientific"
+msgstr "علمي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__scientific_name
+msgid "Scientific Name"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__scientific_signature
+msgid "Scientific signature"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__second
+#: model:ir.model.fields,field_description:education_college.field_new_admission__second
+#: model:ir.model.fields,field_description:education_college.field_new_student__second
+#: model:ir.model.fields,field_description:education_college.field_old_student__second
+msgid "Second Name"
+msgstr "الاسم الثاني"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__student_state__second_semester
+msgid "Second Semester"
+msgstr "السمستر الثاني"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__form_health__educational_level__secondary
+msgid "Secondary"
+msgstr "ثانوي"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__discount_type__0
+msgid "Select Discount Type"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_semester_list_action
+#: model:ir.model.fields,field_description:education_college.field_create_payment__semester_id
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__semester_id
+#: model:ir.model.fields,field_description:education_college.field_education_pdf_report__semester_id
+#: model:ir.model.fields,field_description:education_college.field_new_admission__semester_id
+#: model:ir.model.fields,field_description:education_college.field_new_student__semester_id
+#: model:ir.model.fields,field_description:education_college.field_old_student__semester_id
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__name
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__semester_id
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__semester_id
+#: model:ir.ui.menu,name:education_college.menu_Semester
+#: model_terms:ir.ui.view,arch_db:education_college.education_semester_view_form
+msgid "Semester"
+msgstr "الفصل الدراسي"
+
+#. module: education_college
+#: code:addons/education_college/models/configuration.py:0
+#, python-format
+msgid "Semester Name  Must Be Only Letters"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.constraint,message:education_college.constraint_semester_semester_name_unique
+msgid "Semester Name Must Be Unique"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_semester_tree_view
+msgid "Semester tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__social_status__single
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__social_status__single
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__social_status__single
+msgid "Single "
+msgstr "عازب"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__form_number
+#: model:ir.model.fields,field_description:education_college.field_new_student__sitting_number
+#: model:ir.model.fields,field_description:education_college.field_old_student__sitting_number
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__sitting_number
+msgid "Sitting Number"
+msgstr "رقم الجلوس"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_semester_viwe_search
+msgid "Smester"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__social_status
+msgid "Social State"
+msgstr "الحالة الاجتماعية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__social_status
+#: model:ir.model.fields,field_description:education_college.field_old_student__social_status
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__social_status
+msgid "Social Status"
+msgstr "الحالة الاجتماعية"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__acceptance_type__special
+msgid "Special"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__name
+#: model:ir.ui.menu,name:education_college.menu_specialization
+#: model_terms:ir.ui.view,arch_db:education_college.education_specialization_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_specialization_viwe_search
+msgid "Specialization"
+msgstr "التخصصات"
+
+#. module: education_college
+#: code:addons/education_college/models/configuration.py:0
+#, python-format
+msgid "Specialization  Name Must Be Only Letters"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_specialization_tree_view
+msgid "Specialization tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__type_of_fees__stady
+msgid "Stady"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__student_states
+#: model:ir.model.fields,field_description:education_college.field_old_student__student_states
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__states
+msgid "State"
+msgstr "الولاية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__state
+#: model:ir.model.fields,field_description:education_college.field_new_admission__state
+#: model:ir.model.fields,field_description:education_college.field_new_student__state
+#: model:ir.model.fields,field_description:education_college.field_old_student__state
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__state
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__state
+#: model:ir.model.fields,field_description:education_college.field_study_fees__state
+msgid "Status"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.kanban_view_student
+msgid "Student"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_descount_wizard_form_view
+msgid "Student Discounts"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_study_fees_view_form
+msgid "Student Fees"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.report,name:education_college.new_student
+#: model:ir.actions.report,name:education_college.old_student
+#: model:ir.actions.report,name:education_college.student_registrar
+msgid "Student Information Report"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.report,name:education_college.action_education_register_pdf_report
+msgid "Student Lists Pde Report"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_student_lists_pdf_report
+#: model:ir.ui.menu,name:education_college.open_academy_reporting_sub
+#: model_terms:ir.ui.view,arch_db:education_college.education_pdf_report_form_view
+msgid "Student Lists Pdf Report"
+msgstr "قوائم الطلاب"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__student_id
+#: model:ir.model.fields,field_description:education_college.field_form_health__student_ids
+#: model:ir.model.fields,field_description:education_college.field_form_request__student_ids
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__student_ids
+#: model:ir.model.fields,field_description:education_college.field_student_discounts_wizard__student_ids
+msgid "Student Name"
+msgstr "اسم الطالب"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_request__form_number
+msgid "Student Number"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_student_registrar_list_action
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_viwe_search
+msgid "Student Registrar"
+msgstr "التسجيل"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__student_state
+msgid "Student Status"
+msgstr "حالة القيد"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Student's  Financial Notes"
+msgstr "الموقف المالي "
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Student's Academic Position"
+msgstr "الموقف الاكاديمي "
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Student's Name"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_study_fees_list_action
+#: model_terms:ir.ui.view,arch_db:education_college.education_study_fees_viwe_search
+msgid "Students Fees"
+msgstr "رسوم الطلاب"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__study_fees
+msgid "Study  Fees"
+msgstr "الرسوم الدراسية"
+
+#. module: education_college
+#: model:ir.ui.menu,name:education_college.menu_student_fees
+msgid "Study And Register Fees"
+msgstr "الرسوم الدراسة"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "Study Information"
+msgstr "بيانات الطالب"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__year
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__study_year
+#: model:ir.model.fields,field_description:education_college.field_study_fees__study_year
+#: model:ir.model.fields,field_description:education_college.field_study_fees__year
+msgid "Study Year"
+msgstr "العام الدراسي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__year_stady
+msgid "Study Year  :"
+msgstr "العام الدراسي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__for_sudanes
+msgid "Sudanes "
+msgstr "المبلغ للسودانيين"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_study_fees__sudaness_study
+msgid "Sudanes Study"
+msgstr "الرسوم للسودانين "
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__nationality__sudanese
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_of_certificate__sudanese
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__type_of_certificate__sudanese
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_of_certificate__sudanese
+#: model:ir.model.fields.selection,name:education_college.selection__type_admission__nationality__sudanese
+msgid "Sudanese"
+msgstr "سودانية"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__currency_type__sd
+msgid "Sudanese Bound"
+msgstr " جنية  سوداني"
+
+#. module: education_college
+#: model:res.groups,name:education_college.education_system_admin_group
+msgid "System Admin"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__user_name
+msgid "System User "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__tv
+#: model:ir.model.fields,field_description:education_college.field_old_student__tv
+msgid "TV"
+msgstr "التلفاز"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "Tel :+249112203333"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__telephone
+#: model:ir.model.fields,field_description:education_college.field_old_student__telephone
+msgid "Telephone"
+msgstr "رقم التلفون"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__telephone
+msgid "Telphone"
+msgstr "رقم التلفون"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__the_number
+msgid "The  Number"
+msgstr "رقم الاثبات"
+
+#. module: education_college
+#: model:ir.model.constraint,message:education_college.constraint_program_program_code_unique
+msgid "The Code  Must Be Unique"
+msgstr "الكود مستخدم من قبل الرجاء ادخال كود اخر"
+
+#. module: education_college
+#: code:addons/education_college/models/fees.py:0
+#: code:addons/education_college/models/fees.py:0
+#, python-format
+msgid ""
+"The Fees Have Been Previously Entered. Cannot Be Entered More Than Once Ber "
+"Year"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__installment__first
+msgid "The First Installment"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.constraint,message:education_college.constraint_college_college_name_unique
+msgid "The Name Of College Must Be Unique"
+msgstr "اسم الكلية موجود مسبقا"
+
+#. module: education_college
+#: model:ir.model.constraint,message:education_college.constraint_program_program_name_unique
+msgid "The Name Of Program Must Be Unique"
+msgstr "اسم البرنامج موجود مسبقا "
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__id_number
+#: model:ir.model.fields,field_description:education_college.field_old_student__id_number
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__id_number
+msgid "The National Number"
+msgstr "رقم اثبات الشخصية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__ratio
+#: model:ir.model.fields,field_description:education_college.field_old_student__ratio
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__ratio
+msgid "The Ratio"
+msgstr "النسبة "
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__previous_result
+msgid "The Result"
+msgstr "الموقف الاكاديمي"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__installment__second
+msgid "The Second Installment"
+msgstr ""
+
+#. module: education_college
+#: code:addons/education_college/models/configuration.py:0
+#, python-format
+msgid "The Value Of College Name Must Be Only Letters"
+msgstr ""
+
+#. module: education_college
+#: code:addons/education_college/models/fees.py:0
+#: code:addons/education_college/models/fees.py:0
+#, python-format
+msgid "The Value Of Fees Must Be Gred Than zero"
+msgstr ""
+
+#. module: education_college
+#: code:addons/education_college/models/configuration.py:0
+#, python-format
+msgid "The Value Of Program Code Must Be Positive Number"
+msgstr ""
+
+#. module: education_college
+#: code:addons/education_college/models/configuration.py:0
+#, python-format
+msgid "The Value Of Program Name Must Be Only Letters"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__course
+#: model:ir.model.fields,field_description:education_college.field_old_student__course
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__course
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__installment
+msgid "The course"
+msgstr "المساق"
+
+#. module: education_college
+#: code:addons/education_college/models/admissions.py:0
+#, python-format
+msgid "The value Of Student Name Must Be Only Letters"
+msgstr ""
+
+#. module: education_college
+#: code:addons/education_college/models/student_information.py:0
+#: code:addons/education_college/models/student_information.py:0
+#, python-format
+msgid "The value of Form  ID Number must be positive number"
+msgstr ""
+
+#. module: education_college
+#: code:addons/education_college/models/admissions.py:0
+#, python-format
+msgid "The value of Form Number Must Be Positive Number"
+msgstr ""
+
+#. module: education_college
+#: code:addons/education_college/models/student_information.py:0
+#: code:addons/education_college/models/student_information.py:0
+#, python-format
+msgid "The value of applicant name must only letters"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__third
+#: model:ir.model.fields,field_description:education_college.field_new_admission__third
+#: model:ir.model.fields,field_description:education_college.field_new_student__third
+#: model:ir.model.fields,field_description:education_college.field_old_student__third
+msgid "Third Name"
+msgstr "الاسم الثالث"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__remaining_fee
+msgid "Total Received Fees"
+msgstr "الرسوم الدراسية"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__type_acceptance
+msgid "Type Acceptance"
+msgstr "نوع القبول"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__type_acceptance
+msgid "Type Of Acceptance"
+msgstr "نوع القبول"
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_type_of_admission_list_action
+#: model:ir.model.fields,field_description:education_college.field_admission_pdf_report__admission_type
+#: model:ir.model.fields,field_description:education_college.field_new_admission__admission_type
+#: model:ir.model.fields,field_description:education_college.field_type_admission__admission_type
+#: model:ir.ui.menu,name:education_college.menu_type_of_admission
+#: model_terms:ir.ui.view,arch_db:education_college.education_type_of_admission_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_type_of_admission_viwe_search
+msgid "Type Of Admission"
+msgstr "نوع القبول"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__type_of_certificate
+#: model:ir.model.fields,field_description:education_college.field_old_student__type_of_certificate
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__type_of_certificate
+msgid "Type Of Certificate"
+msgstr "نوع الشهادة"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__type_of_fees
+msgid "Type Of Fees"
+msgstr "نوع الرسوم"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__univercity_name
+msgid "University  Name "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_form_health__form_number
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__form_number
+msgid "University ID"
+msgstr "الرقم الجامعي"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_unread
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_unread
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_unread
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_unread
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_unread
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_unread
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_unread
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_unread
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_unread
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_unread
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_unread
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_unread
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_unread
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_unread
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_unread
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_unread
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_unread
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_batch_batch__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_college_college__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_degree_holder__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_form_health__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_form_request__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_form_resignation__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_level_level__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_new_admission__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_new_student__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_old_student__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_other_revenue__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_program_program__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_semester_semester__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_specialization_specialization__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_study_fees__message_unread_counter
+#: model:ir.model.fields,field_description:education_college.field_type_admission__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: education_college
+#: model:res.groups,name:education_college.education_users_group
+msgid "User"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__admission_pdf_report__admission_type__tow_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__acceptance_type__tow_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__admission_type__tow_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_acceptance__tow_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__certificate_type__tow_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_acceptance__tow_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__type_admission__admission_type__tow_vacancy
+msgid "Vacancy Tow"
+msgstr "شواغر الدورة الثانية"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__admission_pdf_report__admission_type__one_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__create_payment__acceptance_type__one_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__admission_type__one_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__type_acceptance__one_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__certificate_type__one_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__type_acceptance__one_vacancy
+#: model:ir.model.fields.selection,name:education_college.selection__type_admission__admission_type__one_vacancy
+msgid "Vacancy one"
+msgstr "شواغر الدورة الاولي"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__state__waiting_approve
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__state__waiting_approve
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__state__waiting_approve
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__state__waiting_approve
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_new_student_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_old_student_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+msgid "Waiting Approve"
+msgstr "انتظار الاعتماد"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__website
+#: model:ir.model.fields,field_description:education_college.field_old_student__website
+msgid "Web Site"
+msgstr "الموقع الالكتروني"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.custom_session_header_footer
+msgid "Web:"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__whatsapp_phone
+#: model:ir.model.fields,field_description:education_college.field_old_student__whatsapp_phone
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__whatsapp_phone
+msgid "Whatsapp"
+msgstr "رقم الواتساب"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_revenue_revenue__year
+msgid "Year"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__accept_year
+#: model:ir.model.fields,field_description:education_college.field_old_student__accept_year
+msgid "Year Of Admission "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__about
+msgid "about"
+msgstr "عبارة عن"
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_batch_batch
+msgid "add  batch information "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_program_program
+msgid "add  program information "
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_new_admission
+msgid "add admission information"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_college_college
+msgid "add college  information"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_degree_holder
+msgid "add degree holder"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_study_fees
+msgid "add fees information"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_form_health
+#: model:ir.model,name:education_college.model_form_request
+msgid "add health insurance"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_level_level
+msgid "add level information"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_revenue_revenue
+msgid "add revenue fees"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_admission_pdf_report
+msgid "admission.pdf.report"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_discounts_wizard__discount_type__2
+msgid "amount"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__applicant
+msgid "applicant  Name"
+msgstr "الاسم"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_new_student_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_old_student_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_new_student_information_view_form
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+msgid "confirm"
+msgstr "ترحيل"
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__state__done
+#: model:ir.model.fields.selection,name:education_college.selection__new_admission__state__done
+#: model:ir.model.fields.selection,name:education_college.selection__new_student__state__done
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__state__done
+#: model:ir.model.fields.selection,name:education_college.selection__revenue_revenue__state__done
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__state__done
+#: model:ir.model.fields.selection,name:education_college.selection__study_fees__state__done
+msgid "done"
+msgstr "تم"
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_education_pdf_report
+msgid "education.pdf.report"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,help:education_college.field_college_college__name
+msgid "enter Name of Collage"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,help:education_college.field_specialization_specialization__name
+msgid "enter Name of Specialization"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,help:education_college.field_program_program__name
+msgid "enter name of program"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.health_insurance_list_action
+#: model_terms:ir.ui.view,arch_db:education_college.education_health_insurance_view_form
+msgid "health insurance"
+msgstr "التامين الصحي"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.health_insurance_tree_view
+msgid "health insurance tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_new_student__image_1920
+#: model:ir.model.fields,field_description:education_college.field_old_student__image_1920
+#: model:ir.model.fields,field_description:education_college.field_student_registrar__image_1920
+msgid "image_1920"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_student_registrar_view_form
+msgid "medical report"
+msgstr "الفحص الطبي"
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_new_student
+msgid "new student basic  information"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_tree_view
+msgid "old Student information tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_old_student
+msgid "old student basic  information"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_other_revenue_tree_view
+msgid "other revenue tree"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_old_student_information_view_form
+msgid "parent Information"
+msgstr "بيانات ولي الامر"
+
+#. module: education_college
+#: model:ir.model.fields,field_description:education_college.field_create_payment__paying
+msgid "paying off"
+msgstr "اجمالي المبلغ"
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_report_education_college_education_admission_template
+msgid "report.education_college.education_admission_template"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_report_education_college_education_register_pdf_report_template
+msgid "report.education_college.education_register_pdf_report_template"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_resignation_request_view_id
+msgid "resignation Request"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_form_resignation
+msgid "resignation information"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.resignation_request_list_action
+msgid "resignation request"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.resignation_request_tree_view
+msgid "resignation request tree"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_revenue_fees_tree_view
+msgid "revenue tree"
+msgstr ""
+
+#. module: education_college
+#: model:ir.actions.act_window,name:education_college.education_specialization_list_action
+msgid "specialization"
+msgstr "التخصصات"
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_student_registrar
+msgid "student registrar office"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model,name:education_college.model_type_admission
+msgid "type of admission "
+msgstr "نوع القبول"
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "www:napata.net"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+#: model_terms:ir.ui.view,arch_db:education_college.education_resignation_request_view_id
+msgid "استمارة استقالة"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "اسم البرنامج :"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_template
+#: model_terms:ir.ui.view,arch_db:education_college.education_register_pdf_report_template
+msgid "اسم الطالب"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_information_template
+msgid "البرنامج :"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+msgid "التاريخ :"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__old_accept_type__bridging
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__old_accept_type__bridging
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__old_accept_type__bridging
+msgid "التجسير"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__old_accept_type__transfer
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__old_accept_type__transfer
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__old_accept_type__transfer
+msgid "التحويل من جامعة الي اخري"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+#: model_terms:ir.ui.view,arch_db:education_college.education_resignation_request_view_id
+msgid "امانة الشؤون العلمية"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__old_accept_type__degree_holder
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__old_accept_type__degree_holder
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__old_accept_type__degree_holder
+msgid "حملة الدرجات العلمية"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_register_pdf_report_template
+msgid "رقم  الطالب"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_template
+msgid "رقم الطالب"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__previous_result__scientific
+msgid "طالب جديد"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_health_insurance_view_form
+msgid "طلب اشتراك"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__previous_result__literary
+msgid "فصل  اكاديمي"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_information_template
+msgid "كلية نبتة"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_old_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_resignation_template
+#: model_terms:ir.ui.view,arch_db:education_college.delivering_financial_template
+msgid "كليــــــــــــــــة نبتـــــــــة"
+msgstr ""
+
+#. module: education_college
+#: model_terms:ir.ui.view,arch_db:education_college.education_admission_template
+#: model_terms:ir.ui.view,arch_db:education_college.education_register_pdf_report_template
+msgid "ملاحظات"
+msgstr ""
+
+#. module: education_college
+#: model:ir.model.fields.selection,name:education_college.selection__degree_holder__old_accept_type__mature
+#: model:ir.model.fields.selection,name:education_college.selection__old_student__old_accept_type__mature
+#: model:ir.model.fields.selection,name:education_college.selection__student_registrar__old_accept_type__mature
+msgid "ناضجين"
+msgstr ""

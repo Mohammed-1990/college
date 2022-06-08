@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="education_menu_root" name="Scientific Affairs" groups="groups_result_user"/>
+           <menuitem id="education_subject_degrees_menu" name="Subject Degrees"
+                  parent="education_menu_root"
+                  groups="groups_result_user"
+                  sequence="10"/>
+         <menuitem id="education_average_calculation_menu" name="Rates Calculation"
+                  parent="education_menu_root" groups="groups_result_user"
+                  sequence="20"/>
+
+
+        <menuitem id="education_sublect_handlining_menu" name="Subject Handling"
+                  parent="education_menu_root" groups="groups_result_user"
+                  sequence="30"/>
+
+         <menuitem id="education_report_menu" name="Reports"
+                  parent="education_menu_root"
+                  groups="groups_result_user"
+                  sequence="40"/>
+           <menuitem id="education_menu_configuration_root" name="Configuration"
+                  parent="education_menu_root"
+                  groups="groups_result_user"
+                  sequence="50"/>
+
+
+
+
+
+    </data>
+</odoo>

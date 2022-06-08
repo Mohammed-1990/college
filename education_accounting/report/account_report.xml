@@ -1,0 +1,12 @@
+<odoo>
+
+    <report
+        id="report_session"
+        model="education.accounting"
+        string="Session Report"
+        name="education_accounting.delivering_financial_template"
+        file="education_accounting.report_session"
+        report_type="qweb-pdf"
+         menu="False"
+    />
+</odoo>

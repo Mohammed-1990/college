@@ -1,0 +1,187 @@
+<odoo>
+    <data>
+        <!--    form  to add new fees-->
+        <record model="ir.ui.view" id="education_stady_fees_tree_view">
+            <field name="name">stady.fees.tree</field>
+            <field name="model">study.fees</field>
+            <field name="arch" type="xml">
+                <tree string="Fees tree">
+                    <field name="college_id"/>
+                    <field name="program_id"/>
+                    <field name="sudaness_study"/>
+                    <field name="sdn_register_fees"/>
+                    <field name="foreigners_study"/>
+                    <field name="foriegn_register_fees"/>
+                    <field name="study_year"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="education_study_fees_view_form">
+            <field name="name">education.study.fees.form</field>
+            <field name="model">study.fees</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Student Fees">
+                    <header>
+                        <button name="action_confirm" states="draft" string="Confirm" type="object"
+                                class="btn-primary"/>
+                        <button name="action_done" type="object" states="confirm" string="Done" class="btn-primary"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="study_year" readonly="1"/>
+                            </group>
+                        </group>
+                        <group col="4" colspan="2">
+                            <field name="college_id" attrs="{'readonly':[('state','=','done')]}"
+                                   options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   required="1"/>
+                            <field name="program_id" attrs="{'readonly':[('state','=','done')]}"
+                                   options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   required="1"/>
+                        </group>
+                        <group col="4" colspan="2">
+                            <field name="sudaness_study" attrs="{'readonly':[('state','=','done')]}" required="1"/>
+                            <field name="sdn_register_fees" attrs="{'readonly':[('state','=','done')]}" required="1"/>
+                            <field name="foreigners_study" attrs="{'readonly':[('state','=','done')]}" required="1"/>
+                            <field name="foriegn_register_fees" attrs="{'readonly':[('state','=','done')]}"
+                                   required="1"/>
+                        </group>
+                        <notebook>
+                            <page string="Other Info">
+                                <group>
+                                    <field name="company_id" force_save="1" readonly="1"/>
+                                </group>
+                            </page>
+                        </notebook>
+                        <group>
+                            <field name="user_id" readonly="1"/>
+                            <field name="year" force_save='1' readonly="1" invisible="1"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="education_study_fees_viwe_search" model="ir.ui.view">
+            <field name="name">study.fees.search</field>
+            <field name="model">study.fees</field>
+            <field name="arch" type="xml">
+                <search string="Students Fees">
+                    <field name="college_id"/>
+                    <field name="program_id"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="education_study_fees_list_action">
+            <field name="name">Students Fees</field>
+            <field name="res_model">study.fees</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first student fees
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_student_fees" name="Study And Register Fees"
+                  parent="menu_finance_root"
+                  action="education_study_fees_list_action"
+                  sequence="10"/>
+
+
+        <!--        add revenue fees-->
+        <record model="ir.ui.view" id="education_revenue_fees_tree_view">
+            <field name="name">revenue.fees.tree</field>
+            <field name="model">revenue.revenue</field>
+            <field name="arch" type="xml">
+                <tree string="revenue tree">
+                    <field name="revenue_type_id"/>
+                    <field name="for_sudanes"/>
+                    <field name="for_foreig"/>
+                    <field name="study_year"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="education_revenue_fees_view_form">
+            <field name="name">education.revenue.fees.form</field>
+            <field name="model">revenue.revenue</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Revenue Fees">
+                    <header>
+                        <button name="action_confirm" states="draft" string="Confirm" type="object"
+                                class="btn-primary"/>
+                        <button name="action_done" type="object" states="confirm" string="Done" class="btn-primary"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="study_year" readonly="1"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="revenue_type_id" attrs="{'readonly':[('state','=','done')]}"
+                                   options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   required="1"/>
+                        </group>
+                        <group col="4" colspan="2">
+                            <field name="for_sudanes" attrs="{'readonly':[('state','=','done')]}" required="1"/>
+                            <field name="for_foreig" attrs="{'readonly':[('state','=','done')]}" required="1"/>
+                        </group>
+                        <notebook>
+                            <page string="Other Info">
+                                <group>
+                                    <field name="company_id"/>
+                                </group>
+                            </page>
+                        </notebook>
+                        <group>
+                            <field name="user_id" readonly="1"/>
+                            <field name="year" force_save='1' readonly="1" invisible="1"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="education_revenue_fees_viwe_search" model="ir.ui.view">
+            <field name="name">revenue.fees.search</field>
+            <field name="model">revenue.revenue</field>
+            <field name="arch" type="xml">
+                <search string="Revenue Fees">
+                    <field name="revenue_type_id"/>
+                    <field name="for_sudanes"/>
+                    <field name="for_foreig"/>
+                    <field name="study_year"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="education_revenue_fees_list_action">
+            <field name="name">Revenue Fees</field>
+            <field name="res_model">revenue.revenue</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first revenue fees
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_other_revenue_fees" name="Other Revenue Fees"
+                  parent="menu_finance_root"
+                  action="education_revenue_fees_list_action"
+                  sequence="20"/>
+    </data>
+</odoo>

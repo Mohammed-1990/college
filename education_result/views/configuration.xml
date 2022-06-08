@@ -1,0 +1,88 @@
+<odoo>
+
+    <record model="ir.ui.view" id="education_subject_collage_view_form">
+        <field name="name">student.subject.form</field>
+        <field name="model">student.subject</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="student subject">
+                <sheet>
+                    <group>
+                        <field name="year" readonly="1"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="college_id"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="program_id"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="level_id"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="semester_id"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="name" required="1"/>
+                        <field name="code" required="1"/>
+                        <field name="hours" required="1"/>
+                    </group>
+                    <group>
+                        <field name="user_id" readonly="1"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="education_subject_tree_view">
+        <field name="name">subject.tree</field>
+        <field name="model">student.subject</field>
+        <field name="arch" type="xml">
+            <tree string="subject tree">
+                <field name="college_id"/>
+                <field name="program_id"/>
+                <field name="level_id"/>
+                <field name="semester_id"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="hours"/>
+                <field name="year"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_subject_search_view">
+        <field name="name">subject.search</field>
+        <field name="model">student.subject</field>
+        <field name="arch" type="xml">
+            <search string="subject tree">
+                <field name="program_id"/>
+                <field name="level_id"/>
+                <field name="semester_id"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="hours"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_subject_list_action">
+        <field name="name">subject</field>
+        <field name="res_model">student.subject</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first subject
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="subject_menu" name="Subject"
+              parent="education_menu_configuration_root" sequence="10"
+              action="education_subject_list_action"/>
+</odoo>

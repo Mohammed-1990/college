@@ -1,0 +1,239 @@
+<odoo>
+    <record model="ir.ui.view" id="clinic_nursing_view_id">
+        <field name="name">clinic.nursing.form</field>
+        <field name="model">clinic.nursing</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Student Health Service" create="false">
+              <header groups="base.group_user">
+                        <button name="confirm_test_result" states="draft" type="object" string="Confirm" class="oe_highlight"/>
+                        <button name="approval_test_result" states="confirm" type="object" string="Approval Application" class="oe_highlight"/>
+                        <button name="done_test_result" states="approval" type="object" string="Done" class="oe_highlight"/>
+                        <button name="set_to_draft" states="confirm,approval" string="Set to Draft" type="object"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approval,done"/>
+                    </header>
+                <sheet>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px; color: black;">
+                        <h2>
+                            <span>Medical Examination</span>
+                        </h2>
+                    </div>
+  
+                      <field name="image_1920" widget="image" class="oe_left oe_avatar"/>
+                   <group>
+                     <h3 style="text-align: center;">
+                                   <field name="name" placeholder="Student's Name" required="True" readonly="1"/>
+                            </h3>
+                            </group>
+                    <group string="Student Information">
+                    </group>
+                    <group colspan="8" col="4" name="main">
+                        <field name="program" readonly="1"/>
+                        <field name="patient_id" placeholder="Patient ID" readonly="1"/>
+                        <field name="nationality" readonly="1"/>
+                        <field name="birth_date" readonly="1"/>
+                        <field name="gender" readonly="1"/>
+                        <field name="religion" readonly="1"/>
+                        <field name="hom" readonly="1"/>
+                        <field name="phone" readonly="1"/>
+                        <field name="email" readonly="1"/>
+                    </group>
+                    <group string="Previous Schools:">
+                        <group colspan="6" col="6" name="main">
+                            <field name="elementary"/>
+                            <field name="inter"/>
+                            <field name="secondary"/>
+                            <field name="home"/>
+                            <field name="bursary"/>
+                            <field name="University"/>
+                        </group>
+                    </group>
+                    <group colspan="4" col="4" name="main">
+                        <field name="height"/>
+                        <field name="weight"/>
+                        <field name="pulse"/>
+                        <field name="bp"/>
+                    </group>
+                    <notebook>
+                        <page string="family History">
+                            <group colspan="18" col="6" name="main">
+
+                                <field name="tube"/>
+                                <field name="chronic"/>
+                                <field name="diabetes"/>
+                                <field name="hypertension"/>
+                                <field name="heart"/>
+                                <field name="typhoid"/>
+                                <field name="dysentery"/>
+                                <field name="asthma"/>
+                                <field name="syphlls"/>
+                                <field name="hay2"/>
+                                <field name="eczema2"/>
+                                <field name="skin"/>
+                                <field name="pept"/>
+                                <field name="migrain"/>
+                                <field name="epile"/>
+                                <field name="nervous"/>
+                                <field name="illness"/>
+                                <field name="hepatit"/>
+                            </group>
+
+
+                        </page>
+
+                        <page string="Past Medical History">
+                            <group string="Diseases" colspan="22" col="8" name="main">
+                                <field name="malaria"/>
+                                <field name="infective2"/>
+                                <field name="sore"/>
+                                <field name="chest"/>
+                                <field name="eczema"/>
+                                <field name="hay"/>
+                                <field name="typhoid"/>
+                                <field name="dysant"/>
+                                <field name="bilharz"/>
+                                <field name="cough"/>
+                                <field name="mumps"/>
+                                <field name="tuber"/>
+                                <field name="trouble"/>
+                                <field name="rheumatism"/>
+                                <field name="peptic_ulcer"/>
+                                <field name="worms"/>
+                                <field name="onchocer"/>
+                                <field name="breakdown"/>
+                                <field name="dysam"/>
+                                <field name="exams"/>
+                                <field name="sensitiv"/>
+                                <field name="pain"/>
+                            </group>
+
+
+                        </page>
+
+                        <page string="Previuos OPERATION">
+
+                            <group colspan="6" col="6" name="main">
+                                <field name="none"/>
+                                <field name="tonsillectomy"/>
+                                <field name="appendisectomy"/>
+                                <field name="peptic"/>
+                                <field name="accidents"/>
+                                <field name="trans"/>
+                                <field name="other2"/>
+                            </group>
+
+                            <group string="VACCINATION">
+
+                            </group>
+                            <group colspan="6" col="4" name="main">
+                                <field name="small" placeholder="Input Date The Vaccination"/>
+                                <field name="yellow" placeholder="Input Date The Vaccination"/>
+                                <field name="bcg" placeholder="Input Date The Vaccination"/>
+                                <field name="typhoid1" placeholder="Input Date The Vaccination"/>
+                                <field name="infective" placeholder="Input Date The Vaccination"/>
+                                <field name="other" placeholder="Input Date The Vaccination"/>
+                            </group>
+                        </page>
+                        <page string="PERSONAL HISTORY">
+                            <group string="Family Background:">
+                            </group>
+                            <group string="Father:">
+                            </group>
+
+                            <group colspan="5" col="5" name="main">
+                                <field name="alive"/>
+                                <field name="dead"/>
+                                <field name="age2"/>
+                                <field name="occupation"/>
+                                <field name="education"/>
+
+                            </group>
+                            <group string="Mother:">
+                            </group>
+
+                            <group colspan="5" col="5" name="main">
+                                <field name="alive2"/>
+                                <field name="dead2"/>
+                                <field name="age2"/>
+                                <field name="divorced2"/>
+                                <field name="education2"/>
+
+                            </group>
+                            <group string="NOW LIVING WITH?">
+                            </group>
+
+                            <group colspan="6" col="4" name="main">
+                                <field name="parents"/>
+                                <field name="father"/>
+                                <field name="mother"/>
+                                <field name="relative"/>
+                                <field name="sibling"/>
+                                <field name="place"/>
+
+                            </group>
+                            <group string="HABITS">
+                            </group>
+
+                            <group colspan="5" col="5" name="main">
+                                <field name="alcohol"/>
+                                <field name="tobacco"/>
+                                <field name="snuff"/>
+                                <field name="hashish"/>
+                                <field name="otherh"/>
+                            </group>
+
+                            <group string="Physical Training" colspan="4" col="4" name="main">
+                                <field name="type2"/>
+                                <field name="social"/>
+                                <field name="hobby"/>
+                                <field name="attitu"/>
+                            </group>
+                        </page>
+
+                        <page string="Doctor Results">
+
+                            <group col="2" string="Doctor">
+                                <field name="assessment"
+                                />
+                                <field name="diagonis"/>
+                            </group>
+
+                            <group string="Nursing Office">
+                                <field name="nursing"/>
+                            </group>
+
+
+                        </page>
+                    </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="clinic_nursing_tree_view">
+        <field name="name">Clinic.tree</field>
+        <field name="model">clinic.nursing</field>
+        <field name="arch" type="xml">
+            <tree string="Patient tree">
+                <field name="name"/>
+                <field name="program"/>
+                <field name="birth_date"/>
+                <field name="phone"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="clinic_nursing_list_action">
+        <field name="name">Nursing</field>
+        <field name="res_model">clinic.nursing</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first patient
+            </p>
+        </field>
+    </record>
+    <menuitem id="clinic_nursing_menu" name="Nursing Office" parent="clinic_menu" sequence="10"
+              groups="groups_clinic_manager_nursing,clinic_users_group"
+              action="clinic_nursing_list_action"/>
+</odoo>

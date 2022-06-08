@@ -1,0 +1,13 @@
+<odoo>
+
+    <report
+        id="action_education_account_pdf_report"
+        model="education.accounting"
+        string="Financial report"
+        name="education_accounting.account_wizerd_template"
+        report_type="qweb-pdf"
+        menu="False"
+    />
+
+
+</odoo>

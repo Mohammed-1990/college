@@ -1,0 +1,1159 @@
+
+
+<odoo>
+<!--    The Physical-->
+    <template id="delivering_financial_template_physical">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-center">
+            <img class="img" src="education_clinic/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                         <div class="text-center">
+                        <strong> تقرير طبي  </strong>
+                         </div>
+
+                    <br></br>
+
+                    <!--  Personal info -->
+
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+              <!--       student name-->
+
+                          <tr>
+                            <td style="text-align:right">
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                            </td>
+                          <td>
+                                <span>  : التاريخ</span>
+                            </td>
+                                 <td style="text-align:right">
+                                <span t-esc="docs.patient_id"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:رقم الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم الطالب / الطالبة</span>
+                            </td>
+                        </tr>
+<!--                    -->
+
+
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.nationality"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:الجنسية</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.gender"/>
+                            </td>
+                          <td>
+                                <span>  :الجنس</span>
+                            </td>
+                             <td style="text-align:right">
+                                <span t-esc="docs.program"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم البرنامج  </span>
+                            </td>
+                        </tr>
+
+           <!--       nationality-->
+                         <tr>
+                               <td style="text-align:left">
+                                <span t-esc="docs.email"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:البريد الالكتروني   </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.phone"/>
+                            </td>
+                          <td>
+                                <span>  : رقم هاتف الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.birth_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :تاريخ الميلاد</span>
+                            </td>
+                        </tr>
+                    </table>
+<!--                        The Diagonis-->
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+
+                        <div class="text-right">
+                        <div>  نتائج الفحص الطبي  </div>
+                         </div>
+                        <br></br>
+<!--The Result-->
+                        <tr>
+
+                            <td style="text-align:left">
+                                <span t-esc="docs.diagonis"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:التشخيص النهائي </span>
+                            </td>
+                                <td style="text-align:right">
+                                <span t-esc="docs.assessment"/>
+                            </td>
+                          <td>
+                                <span>:ملاحظات الطبيب </span>
+                          </td>
+                        </tr>
+                    </table>
+                    <br></br>
+                     <div>
+                                <b style="font-size:14px;width:50%;float:left;">
+                                    <div class="text-left">
+                                    <span t-esc="docs.doctor_name"/>
+ : اسم الطبيب                                    </div>
+                                </b>
+                    </div>
+
+                </t>
+            </t>
+        </t>
+    </template>
+
+<!--    The Laboratory-->
+
+        <template id="delivering_financial_template_laboratory">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-center">
+            <img class="img" src="education_clinic/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                         <div class="text-center">
+                        <strong> تقرير طبي  </strong>
+                         </div>
+
+                    <br></br>
+
+                    <!--  Personal info -->
+
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+              <!--       student name-->
+
+                          <tr>
+                            <td style="text-align:right">
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                            </td>
+                          <td>
+                                <span>  : التاريخ</span>
+                            </td>
+                                 <td style="text-align:right">
+                                <span t-esc="docs.patient_id"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:رقم الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم الطالب / الطالبة</span>
+                            </td>
+                        </tr>
+<!--                    -->
+
+
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.nationality"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:الجنسية</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.gender"/>
+                            </td>
+                          <td>
+                                <span>  :الجنس</span>
+                            </td>
+                             <td style="text-align:right">
+                                <span t-esc="docs.program"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم البرنامج  </span>
+                            </td>
+                        </tr>
+
+           <!--       nationality-->
+                         <tr>
+                               <td style="text-align:left">
+                                <span t-esc="docs.email"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:البريد الالكتروني   </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.phone"/>
+                            </td>
+                          <td>
+                                <span>  : رقم هاتف الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.birth_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :تاريخ الميلاد</span>
+                            </td>
+                        </tr>
+                    </table>
+<!--                        The Diagonis-->
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+
+                        <div class="text-right">
+                        <div>  نتائج الفحص الطبي  </div>
+                         </div>
+                        <br></br>
+<!--The Result-->
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.diagonis"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:التشخيص النهائي </span>
+                            </td>
+                                <td style="text-align:right">
+                                <span t-esc="docs.assessment"/>
+                            </td>
+                          <td>
+                                <span>:ملاحظات الطبيب </span>
+                          </td>
+                        </tr>
+                    </table>
+                    <br></br>
+                     <div>
+                                <b style="font-size:14px;width:50%;float:left;">
+                                    <div class="text-left">
+                                    <span t-esc="docs.name_of"/>
+ : اسم الطبيب                                    </div>
+                                </b>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!--    The Eye-->
+
+        <template id="delivering_financial_template_eye">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-center">
+            <img class="img" src="education_clinic/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                         <div class="text-center">
+                        <strong> تقرير طبي  </strong>
+                         </div>
+
+                    <br></br>
+
+                    <!--  Personal info -->
+
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+              <!--       student name-->
+
+                          <tr>
+                            <td style="text-align:right">
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                            </td>
+                          <td>
+                                <span> :التاريخ</span>
+                            </td>
+                                 <td style="text-align:left">
+                                <span t-esc="docs.patient_id"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span> :رقم الطالب </span>
+                            </td>
+                              <td style="text-align:left">
+                                <span t-esc="docs.name"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span> :اسم الطالب / الطالبة</span>
+                            </td>
+                        </tr>
+<!--                    -->
+
+
+                        <tr>
+                              <td style="text-align:left">
+                                <span t-esc="docs.religion"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>: الديانة</span>
+                            </td>
+                            <td style="text-align:left">
+                                <span t-esc="docs.nationality"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:الجنسية</span>
+                            </td>
+                            <td style="text-align:left">
+                                <span t-esc="docs.gender"/>
+                            </td>
+                          <td>
+                                <span>:الجنس</span>
+                          </td>
+                            <td style="text-align:left">
+                                <span t-esc="docs.program"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:البرنامج</span>
+                            </td>
+                        </tr>
+
+           <!--       nationality-->
+                         <tr>
+                              <td style="text-align:right">
+                                <span t-esc="docs.home"/>
+                             </td>
+                            <td style="text-align:left;">
+                                <span>:العنوان </span>
+                            </td>
+                               <td style="text-align:left">
+                                <span t-esc="docs.email"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:البريد الالكتروني</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.phone"/>
+                            </td>
+                          <td>
+                                <span> :رقم الهاتف </span>
+                            </td>
+                              <td style="text-align:left">
+                                <span t-esc="docs.birth_date"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span> :تاريخ الميلاد </span>
+                            </td>
+                        </tr>
+                    </table>
+<!-- The Diagonis-->
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+
+                        <div class="text-right">
+                        <div> :نتائج الفحص الطبي</div>
+                         </div>
+                        <br></br>
+<!--The Result-->
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.diagonis"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :التشخيص النهائي</span>
+                            </td>
+                                <td style="text-align:right">
+                                <span t-esc="docs.assessment"/>
+                            </td>
+                          <td>
+                                <span> :النتائج</span>
+                          </td>
+                        </tr>
+                    </table>
+                    <br></br>
+                     <div>
+                                <b style="font-size:14px;width:50%;float:left;">
+                                    <div class="text-left">
+                                    <span t-esc="docs.opthahmologist"/>
+                                 :اسم الطبيب </div>
+                                </b>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+<!--    The Nursing-->
+     <template id="delivering_financial_template_nursing">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-center">
+            <img class="img" src="education_clinic/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                         <div class="text-center">
+                        <strong> تقرير طبي  </strong>
+                         </div>
+
+                    <br></br>
+
+                    <!--  Personal info -->
+
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+              <!--       student name-->
+
+                          <tr>
+                            <td style="text-align:right">
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                            </td>
+                          <td>
+                                <span>  : التاريخ</span>
+                            </td>
+                                 <td style="text-align:right">
+                                <span t-esc="docs.patient_id"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:رقم الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم الطالب / الطالبة</span>
+                            </td>
+                        </tr>
+<!--                    -->
+
+
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.nationality"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:الجنسية</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.gender"/>
+                            </td>
+                          <td>
+                                <span>  :الجنس</span>
+                            </td>
+                             <td style="text-align:right">
+                                <span t-esc="docs.program"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم البرنامج  </span>
+                            </td>
+                        </tr>
+
+           <!--       nationality-->
+                         <tr>
+                               <td style="text-align:left">
+                                <span t-esc="docs.email"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:البريد الالكتروني   </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.phone"/>
+                            </td>
+                          <td>
+                                <span>  : رقم هاتف الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.birth_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :تاريخ الميلاد</span>
+                            </td>
+                        </tr>
+                    </table>
+<!--                        The Diagonis-->
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+
+                        <div class="text-right">
+                        <div>  نتائج الفحص الطبي  </div>
+                         </div>
+                        <br></br>
+<!--The Result-->
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.diagonis"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:التشخيص النهائي </span>
+                            </td>
+                                <td style="text-align:right">
+                                <span t-esc="docs.assessment"/>
+                            </td>
+                          <td>
+                                <span>:ملاحظات الطبيب </span>
+                          </td>
+                        </tr>
+                    </table>
+                    <br></br>
+                     <div>
+                                <b style="font-size:14px;width:50%;float:left;">
+                                    <div class="text-left">
+                                    <span t-esc="docs.nursing"/>
+ : اسم الطبيب                                    </div>
+                                </b>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!--    The Dental-->
+     <template id="delivering_financial_template_mouth">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-center">
+            <img class="img" src="education_clinic/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                         <div class="text-center">
+                        <strong> تقرير طبي  </strong>
+                         </div>
+
+                    <br></br>
+
+                    <!--  Personal info -->
+
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+              <!--       student name-->
+
+                          <tr>
+                            <td style="text-align:right">
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                            </td>
+                          <td>
+                                <span>  : التاريخ</span>
+                            </td>
+                                 <td style="text-align:right">
+                                <span t-esc="docs.patient_id"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:رقم الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم الطالب / الطالبة</span>
+                            </td>
+                        </tr>
+<!--                    -->
+
+
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.nationality"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:الجنسية</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.gender"/>
+                            </td>
+                          <td>
+                                <span>  :الجنس</span>
+                            </td>
+                             <td style="text-align:right">
+                                <span t-esc="docs.program"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم البرنامج  </span>
+                            </td>
+                        </tr>
+
+           <!--       nationality-->
+                         <tr>
+                               <td style="text-align:left">
+                                <span t-esc="docs.email"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:البريد الالكتروني   </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.phone"/>
+                            </td>
+                          <td>
+                                <span>  : رقم هاتف الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.birth_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :تاريخ الميلاد</span>
+                            </td>
+                        </tr>
+                    </table>
+<!--                        The Diagonis-->
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+
+                        <div class="text-right">
+                        <div>  نتائج الفحص الطبي  </div>
+                         </div>
+                        <br></br>
+<!--The Result-->
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.diagonis"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:التشخيص النهائي </span>
+                            </td>
+                                <td style="text-align:right">
+                                <span t-esc="docs.assessment"/>
+                            </td>
+                          <td>
+                                <span>:ملاحظات الطبيب </span>
+                          </td>
+                        </tr>
+                    </table>
+                    <br></br>
+                     <div>
+                                <b style="font-size:14px;width:50%;float:left;">
+                                    <div class="text-left">
+                                    <span t-esc="docs.dentist"/>
+ : اسم الطبيب                                    </div>
+                                </b>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+        <!--    The Psychological-->
+
+     <template id="delivering_financial_template_assessment">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-center">
+            <img class="img" src="education_clinic/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                         <div class="text-center">
+                        <strong> تقرير طبي  </strong>
+                         </div>
+
+                    <br></br>
+
+                    <!--  Personal info -->
+
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+              <!--       student name-->
+
+                          <tr>
+                            <td style="text-align:right">
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                            </td>
+                          <td>
+                                <span>  : التاريخ</span>
+                            </td>
+                                 <td style="text-align:right">
+                                <span t-esc="docs.patient_id"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:رقم الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم الطالب / الطالبة</span>
+                            </td>
+                        </tr>
+<!--                    -->
+
+
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.nationality"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:الجنسية</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.gender"/>
+                            </td>
+                          <td>
+                                <span>  :الجنس</span>
+                            </td>
+                             <td style="text-align:right">
+                                <span t-esc="docs.program"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم البرنامج  </span>
+                            </td>
+                        </tr>
+
+           <!--       nationality-->
+                         <tr>
+                               <td style="text-align:left">
+                                <span t-esc="docs.email"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:البريد الالكتروني   </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.phone"/>
+                            </td>
+                          <td>
+                                <span>  : رقم هاتف الطالب </span>
+                            </td>
+                              <td style="text-align:right">
+                                <span t-esc="docs.birth_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :تاريخ الميلاد</span>
+                            </td>
+                        </tr>
+                    </table>
+<!--                        The Diagonis-->
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+
+                        <div class="text-right">
+                        <div>  نتائج الفحص الطبي  </div>
+                         </div>
+                        <br></br>
+<!--The Result-->
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.behavior"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:السلوك العام  </span>
+                            </td>
+                                <td style="text-align:right">
+                                <span t-esc="docs.look"/>
+                            </td>
+                          <td>
+                                <span>: المظهر العام </span>
+                          </td>
+                        </tr>
+                         <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.place"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>: المكان </span>
+                            </td>
+                                <td style="text-align:right">
+                                <span t-esc="docs.note"/>
+                            </td>
+                          <td>
+                                <span>:الملاحظات العامة </span>
+                          </td>
+                        </tr>
+                    </table>
+                    <br></br>
+                     <div>
+                                <b style="font-size:14px;width:50%;float:left;">
+                                    <div class="text-left">
+                                    <span t-esc="docs.dotor"/>
+ : اسم الطبيب                                    </div>
+                                </b>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>
+
+

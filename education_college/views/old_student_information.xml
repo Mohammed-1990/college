@@ -1,0 +1,187 @@
+<odoo>
+    <data>
+        <!--    form  to add new student basic information-->
+        <record model="ir.ui.view" id="education_old_student_information_tree_view">
+            <field name="name">old.student.tree</field>
+            <field name="model">old.student</field>
+            <field name="arch" type="xml">
+                <tree string="old Student information tree">
+                    <field name="name"/>
+                    <field name="college_id"/>
+                    <field name="program_id"/>
+                    <field name="level_id"/>
+                    <field name="semester_id"/>
+                    <field name="batch_id"/>
+                    <field name="form_number"/>
+                    <field name="old_accept_type"/>
+                    <field name="year_stady"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="education_old_student_information_view_form">
+            <field name="name">education.old.student.form</field>
+            <field name="model">old.student</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Basic Information">
+                    <header>
+                        <button name="confirm_action" type="object" states="draft" string="confirm"
+                                class="btn-primary"/>
+                        <button name="waiting_approve_action" states="confirm" type="object" string="Waiting Approve"
+                                class="btn-primary"/>
+                        <button name="done_action" type="object" states="waiting_approve" string="Done"
+                                class="btn-primary"/>
+
+                        <button name="cancel_acrion" type="object" states="confirm,waiting_approve" string="Cancel"
+                                class="oe_highligth"/>
+
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done,waiting_approve"/>
+                    </header>
+                    <sheet>
+                        <field name="image_1920" widget="image" class="oe_left oe_avatar"/>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Student's Name" required="True" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group col="4" colspan="2">
+                            <field name="college_id" required="1" readonly="1"/>
+                            <field name="program_id" required="1" readonly="1"/>
+                            <field name="level_id" required="1" readonly="1"/>
+                            <field name="semester_id" required="1" readonly="1"/>
+                            <field name="batch_id" required="1" readonly="1"/>
+                            <field name="form_number" required="1" readonly="1"/>
+                            <field name="old_accept_type" readonly="1"/>
+                            <field name="year_stady" readonly="1"/>
+                        </group>
+                        <group col="4" colspan="4" name="Study_information" string="Study Information">
+                            <field name="school_name" readonly="1"/>
+                            <field name="course"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="sitting_number"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="ratio"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="type_of_certificate"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="certificate_level"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+
+
+                        </group>
+
+                        <group col="4" colspan="4" name="name" string="Personal Information">
+                            <field name="nationality_id"
+                                   options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="type_of_id"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="id_number"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="gender"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="social_status"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="religion"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                        </group>
+
+                        <group col="6" colspan="4">
+                            <field name="address"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="birth_date"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="local"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="email"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="student_mobile"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="whatsapp_phone"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+
+                        </group>
+
+                        <group string="Attachments" colspan="2" col="4">
+                            <field name="certificate_completion"
+                                   attrs="{'invisible':  ['&amp;',('old_accept_type','!=','bridging'),('old_accept_type','!=','degree_holder')]}"/>
+                            <field name="certificate_details"
+                                   attrs="{'invisible':  ['&amp;',('old_accept_type','!=','bridging'),('old_accept_type','!=','degree_holder')]}"/>
+                            <field name="certificate_other"
+                                   attrs="{'invisible':  ['&amp;',('old_accept_type','!=','bridging'),('old_accept_type','!=','degree_holder')]}"/>
+                            <field name="conduct_certificate"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="academic_profile"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+
+
+                        </group>
+                        <group string=" How did you hear about the college" col="6" colspan="2">
+                            <field name="facebook"/>
+                            <field name="website"/>
+                            <field name="newspaper"/>
+                            <field name="tv"/>
+                            <field name="radio"/>
+                            <field name="admission_book"/>
+                        </group>
+                        <group string="parent Information" col="4" colspan="2">
+                            <field name="applicant"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="job"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="relative_relation"
+                                   attrs="{'required':[('state','=','draft')],'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="fother_address"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                            <field name="telephone"
+                                   attrs="{'readonly':[('state','in',['confirm','waiting_approve','done'])]}"/>
+                        </group>
+
+                        <group>
+                            <field name="comm_old"/>
+                        </group>
+                        <group>
+                            <field name="company_id" force_save="1" readonly="1"/>
+                            <field name="user_id" readonly="1"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="education_old_student_information_viwe_search" model="ir.ui.view">
+            <field name="name">old.student.search</field>
+            <field name="model">old.student</field>
+            <field name="arch" type="xml">
+                <search string="Basic Information">
+                    <field name="name"/>
+                    <field name="name"/>
+                    <field name="college_id"/>
+                    <field name="program_id"/>
+                    <field name="batch_id"/>
+                    <field name="form_number"/>
+                    <field name="old_accept_type"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="education_old_student_information_list_action">
+            <field name="name">Basic Information</field>
+            <field name="res_model">old.student</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first old student information
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_old_students_basic_information" name="Degree Holder"
+                  parent="menu_basic_information_root"
+                  action="education_old_student_information_list_action"
+                  sequence="20"/>
+    </data>
+</odoo>

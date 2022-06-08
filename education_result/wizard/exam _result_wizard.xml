@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="education_exam_result_pdf_pdf_report_form_view">
+        <field name="name">exam.result.pdf.report.form.view</field>
+        <field name="model">exam.result.pdf.report</field>
+        <field name="arch" type="xml">
+            <form string="Exam Result PDF Report">
+                <group col="4">
+                    <field name="college_id"/>
+                    <field name="program_id"/>
+                    <field name="level_id"/>
+                    <field name="semester_id"/>
+                </group>
+                <group>
+                    <field name="batch_id"/>
+                </group>
+
+                <footer>
+                                        <button string="Print" name="action_print_exam_result_report" type="object" class="btn-primary"/>
+                                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_exam_result_pdf_report" model="ir.actions.act_window">
+        <field name="name">Exam Result PDF Report</field>
+        <field name="res_model">exam.result.pdf.report</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="education_admission_pdf_report_menu"
+              name="Exam Result PDF Report"
+              sequence="1"
+              action="education_exam_result_pdf_report"
+              parent="education_result.education_report_menu"/>
+
+</odoo>

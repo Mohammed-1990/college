@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="education_student_descount_wizard_form_view" model="ir.ui.view">
+            <field name="name">student.discounts.wizard.form</field>
+            <field name="model">student.discounts.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Student Discounts">
+                    <group>
+                        <field name="student_id" readonly="1" force_save="1" options="{'no_open': True}"/>
+                    </group>
+                    <group class="oe_title" col="4" colspan="2">
+                        <field name="program_id" force_save="1" readonly="1" options="{'no_open': True}"/>
+                        <field name="level_id" force_save="1" readonly="1" options="{'no_open': True}"/>
+                        <field name="semester_id" force_save="1" readonly="1" options="{'no_open': True}"/>
+                        <field name="batch_id" force_save="1" readonly="1" options="{'no_open': True}"/>
+                        <field name="form_number" force_save="1" readonly="1"/>
+                        <field name="acceptance_type" force_save="1" readonly="1"/>
+                        <field name="program_fees" force_save="1" readonly="1"/>
+                    </group>
+                    <group>
+                        <field name="after_discount" force_save="1" readonly="1" required="1"/>
+                    </group>
+                    <group>
+                        <field name="discount_prcentage" required="1"/>
+                    </group>
+                    <footer>
+                        <button string="Create Discount" name="Create_student_discounts" type="object"
+                                class="oe_highlight"/>
+                        <button string="Cancel" class="btn btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="student_discounts_wizard_action" model="ir.actions.act_window">
+            <field name="name">Create Student Discount</field>
+            <field name="res_model">student.discounts.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

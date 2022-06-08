@@ -1,0 +1,49 @@
+<odoo>
+
+    <report
+        id="new_student"
+        model="new.student"
+        string="Student Information Report"
+        name="education_college.delivering_financial_template"
+        file="education_college.new_student_report"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+
+    <!--old student-->
+      <report
+        id="old_student"
+        model="old.student"
+        string="Student Information Report"
+        name="education_college.delivering_financial_old_template"
+        file="education_college.old_student"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+       <!--old student-->
+      <report
+        id="student_registrar"
+        model="student.registrar"
+        string="Student Information Report"
+        name="education_college.delivering_financial_information_template"
+        file="education_college.student_registrar"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+
+       <!--Form report-->
+      <report
+        id="form_resignation"
+        model="form.resignation"
+        string="Form Report Health"
+        name="education_college.delivering_financial_resignation_template"
+        file="education_college.form_resignation"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+
+</odoo>
+
+
+
+

@@ -1,0 +1,177 @@
+<odoo>
+
+    <!-- startr tree viwe for Psychological -->
+    <record model="ir.ui.view" id="clinic_psychological_view_id">
+        <field name="name">clinic.psychological.form</field>
+        <field name="model">clinic.psychological</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Student Health Service" create="false">
+  <header groups="base.group_user">
+                        <button name="confirm_test_result" states="draft" type="object" string="Confirm" class="oe_highlight"/>
+                        <button name="approval_test_result" states="confirm" type="object" string="Approval Application" class="oe_highlight"/>
+                        <button name="done_test_result" states="approval" type="object" string="Done" class="oe_highlight"/>
+                        <button name="set_to_draft" states="confirm,approval" string="Set to Draft" type="object"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approval,done"/>
+                    </header>
+                <sheet>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            <span>Psychological Clinic</span>
+
+                        </h2>
+                    </div>
+                     <field name="image_1920" widget="image" class="oe_left oe_avatar"/>
+               <group>
+                     <h3 style="text-align: center;">
+                                   <field name="name" placeholder="Student's Name" required="True" readonly="1"/>
+                            </h3>
+                            </group>
+                    <group string="Student Information" colspan="8" col="4" name="main">
+                        <field name="program" readonly="1"/>
+                        <field name="patient_id" placeholder="Patient ID" readonly="1"/>
+                        <field name="nationality" readonly="1"/>
+                        <field name="birth_date" readonly="1"/>
+                        <field name="gender" readonly="1"/>
+                        <field name="religion" readonly="1"/>
+                        <field name="home" readonly="1"/>
+                        <field name="phone" readonly="1"/>
+                        <field name="email" readonly="1"/>
+                    </group>
+                    <notebook>
+                        <page string="family Information">
+                            <group colspan="6" col="4" name="main" string="Psychological Clinic">
+
+                                <field name="desir"/>
+                                <field name="reson" attrs="{'invisible':[('desir','=',True)]}"/>
+                                <field name="father"/>
+                                <field name="old" attrs="{'invisible':[('father','=',True)]}"/>
+                                <field name="mother"/>
+                                <field name="old2" attrs="{'invisible':[('mother','=',True)]}"/>
+                            </group>
+
+                            <group colspan="9" col="4">
+
+                                <field name="number_brother"/>
+                                <field name="number_family"/>
+                                <field name="number_brother2"/>
+                                <field name="applicant"/>
+                                <field name="phone"/>
+                            </group>
+
+                            <group colspan="6" col="4">
+                                <field name="internal_family"/>
+                                <field name="relation"/>
+                                <field name="married"/>
+                                <field name="father2"/>
+                                <field name="mother2"/>
+                                <field name="friend"/>
+                            </group>
+
+                            <group colspan="4" col="4">
+                                <field name="job_father"/>
+                                <field name="level_edu"/>
+                                <field name="job_mother"/>
+                                <field name="level_edu2"/>
+                            </group>
+
+                        </page>
+
+                        <page string="Personal Information">
+                            <group col="6" name="main" string="Psychological Clinic">
+
+                                <field name="sit"/>
+                                <field name="dessition"/>
+                                <field name="feel"/>
+                            </group>
+                            <group col="6">
+                                <field name="agrasive"/>
+                                <field name="fried"/>
+                                <field name="died"/>
+                            </group>
+                            <group col="6">
+                                <field name="arag"/>
+                                <field name="any"/>
+                                <field name="setting"/>
+                            </group>
+                            <group col="6">
+
+                                <field name="magistion"/>
+                                <field name="smale"/>
+                                <field name="hear"/>
+                            </group>
+                            <group col="6">
+
+                                <field name="foil"/>
+                                <field name="friends"/>
+                                <field name="hate"/>
+                            </group>
+                            <group col="6">
+
+                                <field name="mode"/>
+                                <field name="oppressed"/>
+                                <field name="magic2"/>
+                            </group>
+                            <group col="6">
+
+                                <field name="solve"/>
+                                <field name="mis_tack"/>
+                                <field name="sycologist"/>
+                                <field name="volnteer"/>
+                            </group>
+
+                        </page>
+
+                        <page string="Final Evaluation">
+                            <group colspan="5" col="4">
+
+                                <field name="look"/>
+                                <field name="behavior"/>
+                                <field name="place"/>
+                                <field name="note"/>
+
+
+                            </group>
+                            <group>
+                                <field name="dotor"/>
+
+                            </group>
+                        </page>
+                    </notebook>
+
+
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+    <!-- start form viwe from lap Info -->
+    <record model="ir.ui.view" id="clinic_psychological_tree_view">
+        <field name="name">psychological.tree</field>
+        <field name="model">clinic.psychological</field>
+        <field name="arch" type="xml">
+            <tree string="Patient tree">
+                <field name="name"/>
+                <field name="program"/>
+                <field name="birth_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="clinic_psychological_list_action">
+        <field name="name">Psychological Clinic</field>
+        <field name="res_model">clinic.psychological</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first patient
+            </p>
+        </field>
+        </record>
+
+
+        <menuitem id="clinic_psychological_menu" name="Psychological" parent="clinic_menu" sequence="60"
+                  groups="groups_clinic_manager_psychological,clinic_users_group"
+              action="clinic_psychological_list_action"/>
+
+</odoo>
+

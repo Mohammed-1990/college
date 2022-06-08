@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--Access Group Category-->
+        <record id="category_clinic" model="ir.module.category">
+            <field name="name">The clinic</field>
+        </record>
+        <record id="clinic_users_show" model="res.groups">
+            <field name="name">show menu</field>
+            <field name="category_id" ref="category_clinic"/>
+        </record>
+        <!--Group of Users-->
+        <record id="clinic_users_group" model="res.groups">
+            <field name="name">Users</field>
+            <field name="category_id" ref="category_clinic"/>
+            <field name="implied_ids" eval="[(4, ref('clinic_users_show'))]"/>
+
+        </record>
+
+        <!--Group of Nursing-->
+
+        <record id="groups_clinic_manager_nursing" model="res.groups">
+            <field name="name">nursing</field>
+            <field name="category_id" ref="category_clinic"/>
+            <field name="implied_ids" eval="[(4, ref('clinic_users_show'))]"/>
+
+        </record>
+        <!--Group of Optical-->
+
+        <record id="groups_clinic_manager_optical" model="res.groups">
+            <field name="name">Optical Clinic</field>
+            <field name="category_id" ref="category_clinic"/>
+            <field name="implied_ids" eval="[(4, ref('clinic_users_show'))]"/>
+
+        </record>
+        <!--Group of Dental-->
+
+        <record id="groups_clinic_manager_dental" model="res.groups">
+            <field name="name">Dental</field>
+            <field name="category_id" ref="category_clinic"/>
+            <field name="implied_ids" eval="[(4, ref('clinic_users_show'))]"/>
+
+        </record>
+        <!--Group of Physical-->
+
+        <record id="groups_clinic_manager_physical" model="res.groups">
+            <field name="name">Physical</field>
+            <field name="category_id" ref="category_clinic"/>
+            <field name="implied_ids" eval="[(4, ref('clinic_users_show'))]"/>
+
+        </record>
+        <!--Group of Nursing-->
+
+        <record id="groups_clinic_manager_laboratory" model="res.groups">
+            <field name="name">Laboratory</field>
+            <field name="category_id" ref="category_clinic"/>
+            <field name="implied_ids" eval="[(4, ref('clinic_users_show'))]"/>
+
+
+        </record>
+        <!--Group of Nursing-->
+
+        <record id="groups_clinic_manager_psychological" model="res.groups">
+            <field name="name">Psychological</field>
+            <field name="category_id" ref="category_clinic"/>
+            <field name="implied_ids" eval="[(4, ref('clinic_users_show'))]"/>
+
+        </record>   <!--Group of Nursing-->
+
+    </data>
+</odoo>

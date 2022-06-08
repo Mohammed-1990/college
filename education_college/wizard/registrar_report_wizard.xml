@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem id="education_academy_reporting"
+              name="Reporting"
+              sequence="10"
+              parent="menu_general_report_root"/>
+
+    <record model="ir.ui.view" id="education_pdf_report_form_view">
+        <field name="name">education.pdf.report.form.view</field>
+        <field name="model">education.pdf.report</field>
+        <field name="arch" type="xml">
+            <form string="Student Lists Pdf Report">
+                    <group col="4">
+                        <field name="college_id"/>
+                        <field name="program_id"/>
+                        <field name="batch_id"/>
+                        <field name="level_id"/>
+                        <field name="semester_id"/>
+                    </group>
+                  
+                <footer>
+                    <button string="Print" name="action_print_report" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_student_lists_pdf_report" model="ir.actions.act_window">
+        <field name="name">Student Lists Pdf Report</field>
+        <field name="res_model">education.pdf.report</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="open_academy_reporting_sub"
+              name="Student Lists Pdf Report"
+              sequence="3"
+              action="education_student_lists_pdf_report"
+              parent="education_college.education_academy_reporting"/>
+
+</odoo>

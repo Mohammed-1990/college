@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--Access Group Category-->
+        <record id="category_education" model="ir.module.category">
+            <field name="name">Education</field>
+        </record>
+        <!--Group of Users-->
+        <record id="education_users_group" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="category_education"/>
+        </record>
+        <record id="education_discount_group" model="res.groups">
+            <field name="name">Grand Discount</field>
+            <field name="category_id" ref="category_education"/>
+        </record>
+        <!--        Registered Assistan-->
+        <record id="education_assistant_group" model="res.groups">
+            <field name="name">Registered Assistant</field>
+            <field name="category_id" ref="category_education"/>
+            <field name="implied_ids" eval="[(4, ref('education_users_group'))]"/>
+
+        </record>
+
+        <!--Group of Managers-->
+        <record id="education_manager_group" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="category_education"/>
+            <field name="implied_ids" eval="[(4, ref('education_assistant_group'))]"/>
+        </record>
+        <!--Group of super manager-->
+        <record id="education_system_admin_group" model="res.groups">
+            <field name="name">System Admin</field>
+            <field name="category_id" ref="category_education"/>
+            <field name="implied_ids" eval="[(4, ref('education_manager_group'))]"/>
+        </record>
+        <!--        multi company rule-->
+        <!--        college rule-->
+
+        <record id="education_college_multi_company_rule" model="ir.rule">
+            <field name="name">college multi-company</field>
+            <field ref="model_college_college" name="model_id"/>
+            <field eval="True" name="global"/>
+            <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+        <!--        program rule-->
+        <record id="education_program_multi_company_rule" model="ir.rule">
+            <field name="name">program multi-company</field>
+            <field ref="model_program_program" name="model_id"/>
+            <field eval="True" name="global"/>
+            <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+
+         <!--        batch rule-->
+        <record id="education_batch_multi_company_rule" model="ir.rule">
+            <field name="name">batch multi-company</field>
+            <field ref="model_batch_batch" name="model_id"/>
+            <field eval="True" name="global"/>
+            <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_education_erp_root" name="Education Erp"
+                  groups="education_users_group"
+        />
+
+        <menuitem id="menu_admission_root" name="Admissions"
+                  parent="menu_education_erp_root"
+                  groups="education_users_group"
+                  sequence="10"/>
+
+        <menuitem id="menu_basic_information_root" name="Basic Information"
+                  parent="menu_education_erp_root"
+                  groups="education_users_group"
+                  sequence="20"/>
+
+         <menuitem id="menu_registrar_office_root" name="Registrar's Office"
+                  parent="menu_education_erp_root"
+                  groups="education_users_group"
+                  sequence="30"/>
+
+        <menuitem id="menu_forms_root" name="Forms"
+                  parent="menu_education_erp_root"
+                  groups="education_users_group"
+                  sequence="40"/>
+
+        <menuitem id="menu_finance_root" name="Finance"
+                  parent="menu_education_erp_root"
+                  groups="education_users_group"
+                  sequence="50"/>
+
+        <menuitem id="menu_general_report_root" name="Report"
+                  parent="menu_education_erp_root"
+                  groups="education_users_group"
+                  sequence="60"/>
+
+         <menuitem id="menu_general_settings_root" name="Configuration"
+                  parent="menu_education_erp_root"
+                  groups="education_users_group"
+                  sequence="70"/>
+
+    </data>
+</odoo>

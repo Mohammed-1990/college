@@ -1,0 +1,105 @@
+<odoo>
+
+    <record model="ir.ui.view" id="education_subject_handling_view_form">
+        <field name="name">subject.handling.form</field>
+        <field name="model">subject.handling</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="student subject">
+                <header>
+                    <button name="confirm_action" type="object" states="draft" string="confirm" class="btn-primary"/>
+                    <button name="waiting_approve_action" states="confirm" type="object" string="Waiting Approve"
+                            class="btn-primary"/>
+                    <button name="done_action" type="object" states="waiting_approve" string="Done"
+                            class="btn-primary"/>
+                    <button name="calculated_results_action" type="object" states="done" string="Calculated Results"
+                            class="btn-primary"/>
+                    <button name="cancel_action" type="object" states="confirm,waiting_approve" string="Cancel"
+                            class="oe_highligth"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done,waiting_approve"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="year_stady" readonly="1"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="college_id" attrs="{'readonly':[('state','!=','draft')]}"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="program_id" attrs="{'readonly':[('state','!=','draft')]}"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="level_id" attrs="{'readonly':[('state','!=','draft')]}"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="semester_id" attrs="{'readonly':[('state','!=','draft')]}"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="batch_id" attrs="{'readonly':[('state','!=','draft')]}"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="subject_id" attrs="{'readonly':[('state','!=','draft')]}"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                    </group>
+                    <field name="handling_line_ids" options="{'no_create': True, 'no_edit': True}">
+                        <tree string="Purchase Order Lines" editable="bottom" decoration-danger="total &lt; 50"
+                              decoration-success="total &gt;= 50">
+                            <field name="student_id" readonly="1" required="1" force_save="1"/>
+                            <field name="exam_state" readonly="1" force_save="1"/>
+                            <field name="total" attrs="{'readonly':[('parent.state','!=','draft')]}"/>
+
+                        </tree>
+                    </field>
+                    <group>
+                        <field name="user_id" readonly="1"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="education_subject_handling_tree_view">
+        <field name="name">subject.handling.tree</field>
+        <field name="model">subject.handling</field>
+        <field name="arch" type="xml">
+            <tree string="subject tree">
+                <field name="college_id"/>
+                <field name="program_id"/>
+                <field name="level_id"/>
+                <field name="semester_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_subject_handling_search_view">
+        <field name="name">subject.handling.search</field>
+        <field name="model">subject.handling</field>
+        <field name="arch" type="xml">
+            <search string="subject tree">
+                <field name="program_id"/>
+                <field name="level_id"/>
+                <field name="semester_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_subject_handling_list_action">
+        <field name="name">subject</field>
+        <field name="res_model">subject.handling</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create subject handling
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="sublect_handlining_menu" name="Supplements And Alternatives"
+              parent="education_sublect_handlining_menu" sequence="10"
+              action="education_subject_handling_list_action"/>
+</odoo>

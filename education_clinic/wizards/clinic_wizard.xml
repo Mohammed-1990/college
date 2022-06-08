@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="create_clinic_form" model="ir.ui.view">
+        <field name="name">clinic.wizard.clinic</field>
+        <field name="model">clinic.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Clinic Report">
+                <group>
+                    <field name="student_id" readonly="1" force_save="1" />
+                </group>
+                <group class="oe_title" col="4" colspan="7">
+                    <field name="patient_id" readonly="1" force_save="1" />
+                    <field name="gender" readonly="1" force_save="1"/>
+                    <field name="birth_date" readonly="1" force_save="1"/>
+                    <field name="program" readonly="1" force_save="1"/>
+                    <field name="nationality" readonly="1" force_save="1"/>
+                    <field name="religion" readonly="1" force_save="1"/>
+
+                </group>
+                    <!-- For assessment -->
+                <group col="4" colspan="4">
+                    <field name="result_date" readonly="1"/>
+                    <field name="result" required="1"/>
+
+                </group>
+
+                <group col="2">
+                    <field name="diagonis" required="1"/>
+                </group>
+
+                <group col="2">
+                    <field name="doctor_name"/>
+                </group>
+
+                  <footer>
+                    <button name="create_medical_report" string="Confirm" type="object"
+                          />
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+
+
+            </form>
+        </field>
+    </record>
+
+
+
+
+    <record id="create_clinic_wizard" model="ir.actions.act_window">
+        <field name="name">Create Clinic Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">clinic.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="create_clinic_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

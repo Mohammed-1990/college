@@ -1,0 +1,293 @@
+<odoo>
+<!--    -->
+    <record model="ir.ui.view" id="education_health_insurance_view_form">
+        <field name="name">form.health.form</field>
+        <field name="model">form.health</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="health insurance">
+                <sheet>
+                      <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+طلب اشتراك
+                        </h2>
+                    </div>
+                    <group>
+                        <field name="date" readonly="1"/>
+                    </group>
+                    <group>
+                        <field name="student_ids"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="birth_date" readonly="1" force_save="1"/>
+                        </group>
+                    </group>
+                    <group col="4" colspan="8">
+                        <field name="id_document" force_save="1"/>
+                        <field name="the_number" force_save="1"/>
+                        <field name="place_of_issue"/>
+                        <field name="social_status" force_save="1"/>
+                        <field name="educational_level" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Home Adress ">
+                            <group col="4" colspan="8">
+                                <field name="local" force_save="1"/>
+                                <field name="unit"/>
+                                <field name="neighborhood"/>
+                                <field name="home_number"/>
+                            </group>
+                        </page>
+                        <page string="Contact Information">
+                            <group col="4" colspan="8">
+                                <field name="the_phone" force_save="1"/>
+                                <field name="e_mail" force_save="1"/>
+                            </group>
+                            <group col="4" colspan="8">
+                                <field name="mother_name" required="1"/>
+                                <field name="place_of_birth"/>
+                            </group>
+                            <group col="4" colspan="2">
+                                <field name="health_center" required="1"/>
+                                <field name="hospital" required="1"/>
+                            </group>
+                            <group>
+                                <field name="chronic_diseases"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- start form viwe from pation Info -->
+    <record model="ir.ui.view" id="health_insurance_tree_view">
+        <field name="name">health.insurance.tree</field>
+        <field name="model">form.health</field>
+        <field name="arch" type="xml">
+            <tree string="health insurance tree">
+                <field name="student_ids"/>
+                <field name="form_number"/>
+                <field name="local"/>
+                <field name="the_phone"/>
+                <field name="health_center"/>
+                <field name="hospital"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- end of form viwe from pation Info -->
+    <record model="ir.actions.act_window" id="health_insurance_list_action">
+        <field name="name">health insurance</field>
+        <field name="res_model">form.health</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first study health insurance
+            </p>
+        </field>
+    </record>
+
+     <menuitem id="menu_revenue_fees" name="Health Insurance"
+                  parent="menu_forms_root"
+                  action="health_insurance_list_action"
+                  sequence="10"/>
+
+
+
+
+    <!--    resignation Request-->
+
+    <!-- startr tree viwe for pationt -->
+    <record model="ir.ui.view" id="education_resignation_request_view_id">
+        <field name="name">form.resignation.form</field>
+        <field name="model">form.resignation</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="resignation Request">
+                <header>
+
+                </header>
+                <sheet>
+
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                            <h1>
+ امانة الشؤون العلمية                        </h1>
+                        <br></br>
+                        <h2>
+استمارة استقالة                        </h2>
+                    </div>
+                    <div class="text-left" >
+                        <h3>
+                            Information Filled in by the Student
+                        </h3>
+                    </div>
+                    <group col="2">
+                        <field name="data"/>
+                    </group>
+                    <group col="4" colspan="5">
+                        <field name="student_ids"/>
+                        <field name="form_number"/>
+                        <field name="program"/>
+                        <field name="exam_location"/>
+                        <field name="date_admission"/>
+                    </group>
+                    <group col="4" colspan="2">
+                         <field name="reasons_resignation"/>
+                        <field name="data"/>
+                        <field name="st_phone"/>
+                        <field name="st_moble"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Program Coordinator">
+
+                    <group col="4" colspan="8">
+                        <field name="academic_position"/>
+                        <field name="coordinator_recommend"/>
+                    </group>
+                <group col="6" colspan="4">
+                        <field name="coordinator_name"/>
+                        <field name="Coordinator_signature"/>
+                        <field name="coordinator_date"/>
+                </group>
+                        </page>
+
+                        <page string="Faculty Registrar">
+                    <group col="6" colspan="4">
+                        <field name="registrar_name"/>
+                        <field name="registrar_signature"/>
+                        <field name="registrar_date"/>
+                    </group>
+                        </page>
+                        <page string="Agent Recommendation">
+                    <group col="6" colspan="4">
+                        <field name="agent_name"/>
+                        <field name="agent_signature"/>
+                        <field name="agent_date"/>
+                    </group>
+                        </page>
+
+                        <page string="Recommendation of the Secretary of Scientific Affairs">
+                    <group col="2">
+                        <field name="scientific_recommend"/>
+                    </group>
+                            <group col="6" colspan="4">
+                        <field name="scientific_name"/>
+                        <field name="scientific_signature"/>
+                        <field name="scientific_date"/>
+                    </group>
+                        </page>
+
+                        <page string="College Dean Accreditation">
+                    <group col="4" colspan="8">
+                        <field name="accreditation_signature"/>
+                        <field name="accreditation_date"/>
+                    </group>
+                        </page>
+                     </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- start form viwe from pation Info -->
+    <record model="ir.ui.view" id="resignation_request_tree_view">
+        <field name="name">resignation.request.tree</field>
+        <field name="model">form.resignation</field>
+        <field name="arch" type="xml">
+            <tree string="resignation request tree">
+                <field name="student_ids"/>
+                <field name="college"/>
+                <field name="program"/>
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from pation Info -->
+    <record model="ir.actions.act_window" id="resignation_request_list_action">
+        <field name="name">resignation request</field>
+        <field name="res_model">form.resignation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first resignation request
+            </p>
+        </field>
+    </record>
+
+      <menuitem id="menu_request_resignation" name="Resignation Request"
+                  parent="menu_forms_root"
+                  action="resignation_request_list_action"
+                                  sequence="40"/>
+
+<!--    The Form requiest -->
+
+<!--    <record model="ir.ui.view" id="education_requeist_form_view_form">-->
+<!--        <field name="name">form.request.form</field>-->
+<!--        <field name="model">form.request</field>-->
+<!--        <field name="priority" eval="16"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form string="form requst">-->
+<!--                <sheet>-->
+<!--                      <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">-->
+<!--                        <h2>-->
+<!--استمارة خلو طرف-->
+<!--                        </h2>-->
+<!--                    </div>-->
+<!--                    <group>-->
+<!--                        <field name="date" readonly="1"/>-->
+<!--                    </group>-->
+<!--                    <group>-->
+<!--                        <field name="student_ids"-->
+<!--                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"/>-->
+<!--                    </group>-->
+<!--                    <group col="4" colspan="8">-->
+<!--                        <field name="form_number" force_save="1"/>-->
+<!--                        <field name="level_id" force_save="1"/>-->
+<!--                        <field name="program"/>-->
+
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--                <div class="oe_chatter">-->
+<!--                    <field name="message_follower_ids" widget="mail_followers"/>-->
+<!--                    <field name="message_ids" widget="mail_thread"/>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    &lt;!&ndash; start form viwe from pation Info &ndash;&gt;-->
+<!--    <record model="ir.ui.view" id="health_form_tree_view">-->
+<!--        <field name="name">health.request.tree</field>-->
+<!--        <field name="model">form.request</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree string="health insurance tree">-->
+<!--                <field name="student_ids"/>-->
+<!--                <field name="form_number"/>-->
+<!--                <field name="date"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    &lt;!&ndash; end of form viwe from pation Info &ndash;&gt;-->
+<!--    <record model="ir.actions.act_window" id="form_request_list_action">-->
+<!--        <field name="name">form request</field>-->
+<!--        <field name="res_model">form.request</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--        <field name="help" type="html">-->
+<!--            <p class="o_view_nocontent_smiling_face">Create the first study health insurance-->
+<!--            </p>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--     <menuitem id="menu_revenue_fees" name="Form Request"-->
+<!--                  parent="menu_forms_root"-->
+<!--                  action="form_request_list_action"-->
+<!--                  sequence="30"/>-->
+
+</odoo>

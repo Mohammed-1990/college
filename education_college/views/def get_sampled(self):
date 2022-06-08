@@ -1,0 +1,3 @@
+    def get_sampled(self):
+        for rec in self:
+            rec.tracking_count=len(rec.order_line.filtered(lambda r:r.product_id.sample_product==True))

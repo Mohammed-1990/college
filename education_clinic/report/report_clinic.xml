@@ -1,0 +1,65 @@
+<odoo>
+
+    <report
+        id="report_physical"
+        model="clinic.physical"
+        string="Medical Report"
+        name="education_clinic.delivering_financial_template_physical"
+        file="clinic.physical_report"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+<!--    The Nursing-->
+     <report
+        id="report_nursing"
+        model="clinic.nursing"
+        string="Medical Report"
+        name="education_clinic.delivering_financial_template_nursing"
+        file="clinic.nursing_report"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+
+<!-- The Laboratory-->
+    <report
+        id="report_laboratory"
+        model="clinic.laboratory"
+        string="Medical Report"
+        name="education_clinic.delivering_financial_template_laboratory"
+        file="clinic.laboratory_report"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+    <!-- The Eye-->
+    <report
+        id="report_eye"
+        model="clinic.eye"
+        string="Medical Report"
+        name="education_clinic.delivering_financial_template_eye"
+        file="clinic.eye_report"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+
+    <!-- The Dental-->
+    <report
+        id="report_mouth"
+        model="clinic.mouth"
+        string="Medical Report"
+        name="education_clinic.delivering_financial_template_mouth"
+        file="clinic.mouth_report"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+
+       <!-- The Psychological-->
+    <report
+        id="report_assessment"
+        model="clinic.assessment"
+        string="Medical Report"
+        name="education_clinic.delivering_financial_template_assessment"
+        file="clinic.assessment_report"
+        report_type="qweb-pdf"
+         menu="True"
+    />
+</odoo>

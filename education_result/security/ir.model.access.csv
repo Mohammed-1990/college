@@ -1,0 +1,38 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_subject_user, subject.user,model_student_subject,groups_result_user,1,0,0,0
+access_subject_manager, subject.manager ,model_student_subject,groups_result_manager,1,1,1,0
+access_subject_system_admin, subject.system.admin ,model_student_subject,groups_result_system_admin,1,1,1,1
+
+access_subject_degree_user, subject.degree.user,model_subject_degree,groups_result_user,1,0,0,0
+access_subject_degree_manager, subject.degree.manager ,model_subject_degree,groups_result_manager,1,1,1,0
+access_subject_degree_system_admin, subject.degree.system.admin ,model_subject_degree,groups_result_system_admin,1,1,1,1
+
+access_subject_degree_line_user, subject.degree.line.user,model_subject_degree_line,groups_result_user,1,0,0,0
+access_subject_degree_line_manager, subject.degree.line.manager ,model_subject_degree_line,groups_result_manager,1,1,1,0
+access_subject_degree_line_system_admin,subject.degree.line.system.admin ,model_subject_degree_line,groups_result_system_admin,1,1,1,1
+
+
+access_calculation_rate_user, calculation.average.user,model_calculation_rate,groups_result_user,1,0,0,0
+access_calculation_rate_manager,calculation.average.manager ,model_calculation_rate,groups_result_manager,1,1,1,0
+access_calculation_rate_system_admin,calculation.average.system.admin ,model_calculation_rate,groups_result_system_admin,1,1,1,1
+
+access_line_rate_user, line.average.user,model_line_rate,groups_result_user,1,0,0,0
+access_line_rate_manager,line.average.manager ,model_line_rate,groups_result_manager,1,1,1,0
+access_line_rate_system_admin,line.average.system.admin ,model_line_rate,groups_result_system_admin,1,1,1,1
+
+
+
+access_subject_handling_user,subject.handling.user,model_subject_handling,groups_result_user,1,0,0,0
+access_subject_handling_manager,subject.handling.manager ,model_subject_handling,groups_result_manager,1,1,1,0
+access_subject_handling_system_admin,subject.handling.system.admin ,model_subject_handling,groups_result_system_admin,1,1,1,1
+
+access_subject_handling_line_user, subject.handling.line.user,model_subject_handling_line,groups_result_user,1,0,0,0
+access_subject_handling_line_manager,subject.handling.line.manager ,model_subject_handling_line,groups_result_manager,1,1,1,0
+access_subject_handling_line_system_admin,subject.handling.line.system.admin ,model_subject_handling_line,groups_result_system_admin,1,1,1,1
+
+access_processing_degree_user,processing.degree.user,model_processing_degree,groups_result_user,1,0,0,0
+access_processing_degree_user_manager,processing.degree.manager ,model_processing_degree,groups_result_manager,1,1,1,0
+access_processing_degree_user_system_admin,processing.degree.system.admin ,model_processing_degree,groups_result_system_admin,1,1,1,1
+
+
+

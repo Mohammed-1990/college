@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem id="education_academy_reporting"
+              name="Reporting"
+              sequence="10"
+              parent="menu_general_report_root"/>
+
+    <record model="ir.ui.view" id="education_admission_pdf_report_form_view">
+        <field name="name">education.admission.pdf.report.form.view</field>
+        <field name="model">admission.pdf.report</field>
+        <field name="arch" type="xml">
+            <form string="Admission PDF Report">
+                    <group col="4">
+                        <field name="college_id"/>
+                        <field name="program_id"/>
+                        <field name="batch_id"/>
+                        <field name="admission_type"/>
+                    </group>
+                  
+                <footer>
+                    <button string="Print" name="action_print_admission_report" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_admission_pdf_report" model="ir.actions.act_window">
+        <field name="name">Admission PDF Report</field>
+        <field name="res_model">admission.pdf.report</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="education_admission_pdf_report_menu"
+              name="Admission PDF Report"
+              sequence="1"
+              action="education_admission_pdf_report"
+              parent="education_college.education_academy_reporting"/>
+
+</odoo>

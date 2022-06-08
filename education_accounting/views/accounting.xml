@@ -1,0 +1,110 @@
+<odoo>
+
+    <record model="ir.ui.view" id="education_accounting_view_form">
+        <field name="name">education.accounting.form</field>
+        <field name="model">education.accounting</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Education Accounting">
+                <header>
+                    <button class="oe_highlight" type="action" string="pay Method " states="draft"
+                            name="%(education_accounting.action_membership_invoice_view)d"
+                            context="{'default_student_id':active_id}" groups="education_accounting.account_assistant_group"/>
+                    <button name="action_done" string="Done" type="object" states="confirm"/>
+
+                    <button name="print_account_report"
+                            class="btn-primary" string="Print" icon="fa-print"
+                            type="object" states="done" groups="education_accounting.account_assistant_group"/>
+
+                    <button name="action_done" string="confirm" type="object" states="confirm"/>
+                    <field name="state" widget="statusbar"/>
+
+                </header>
+                <sheet>
+                    <group col="2">
+                        <field name="year" readonly="1"/>
+                    </group>
+                    <div class="container ">
+                        <h3>Mr. / Respected Financial Manager</h3>
+                    </div>
+                    <group string=" Student Full Name ">
+                        <field name="student_id" required="1" readonly="1"/>
+                    </group>
+                    <group col="4" colspan='2' string="Academic Information ">
+                        <field name="program_id" readonly="1" options="{'no_open': True}"/>
+                        <field name="level_id" readonly="1" options="{'no_open': True}"/>
+                        <field name="semester_id" readonly="1" options="{'no_open': True}"/>
+                    </group>
+                    <group col="4" colspan="2" string="Financial Details">
+                        <field name="the_fees" force_save="1" readonly="1" class="the_fees"/>
+                        <field name="currency_type" readonly="True" force_save="1" class="fees"/>
+                        <field name="the_amount" readonly="True" force_save="1" class="fees"/>
+                    </group>
+                    <group colspan="4" col="4">
+                        <field name="money_type" force_save="1" readonly="1"/>
+                        <field name="about" readonly="True" force_save="1" class="about"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <group>
+                            <field name="receipt_code" readonly="1"/>
+                        </group>
+                    </group>
+                    <hr/>
+                    <group>
+                        <field name="admission_ids" readonly="1"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="education_accounting_tree_view">
+        <field name="name">education.accounting.tree</field>
+        <field name="model">education.accounting</field>
+        <field name="arch" type="xml">
+            <tree string="calculation average tree">
+                <field name="student_id"/>
+                <field name="program_id"/>
+                <field name="level_id"/>
+                <field name="semester_id"/>
+                <field name="the_fees"/>
+                <field name="currency_type"/>
+                <field name="receipt_code"/>
+                <field name="year"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_accounting_search_view">
+        <field name="name">education.accountingsearch</field>
+        <field name="model">education.accounting</field>
+        <field name="arch" type="xml">
+            <search string="education accounting tree">
+                <field name="program_id"/>
+                <field name="level_id"/>
+                <field name="semester_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_accounting_list_action">
+        <field name="name">education accounting</field>
+        <field name="res_model">education.accounting</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first education accounting
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="education_accounting_menu" name="Accounting"
+              parent="menu_education_accounting" sequence="10"
+              action="education_accounting_list_action"/>
+
+</odoo>

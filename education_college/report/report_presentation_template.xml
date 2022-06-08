@@ -1,0 +1,1016 @@
+<odoo>
+    <template id="delivering_financial_template">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-center">
+            <img class="img" src="education_college/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                         <div class="text-center">
+                        <strong>استمارة تقديم  </strong>
+                         </div>
+
+                    <br></br>
+
+                    <!--  Personal info -->
+
+                      <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                           اسم البرنامج :
+                                    <span t-esc="docs.program_id.name"/>
+                                    </div>
+                                </b>
+                           <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                                        : العام الدراسي
+                                    </div>
+                                </b>
+                    </div>
+                    <br></br>
+                    <br></br>
+                       <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="docs.name"/>
+                                         : اسم الطالب / الطالبة
+                                    </div>
+                                </b>
+                       </div>
+                    <br></br>
+                    <br></br>
+
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+              <!--       student name-->
+                        <tr>
+                               <td style="text-align:right">
+                                <span t-esc="docs.social_status"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>: الحالة الاجتماعية </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.nationality_id.name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:الجنسية</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.gender"/>
+                            </td>
+                          <td>
+                                <span>  :الجنس</span>
+                            </td>
+                        </tr>
+
+           <!--       nationality-->
+                         <tr>
+                               <td style="text-align:right">
+                                <span t-esc="docs.id_number"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>: الرقم الوطني </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.brath_day"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :تاريخ الميلاد</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.address"/>
+                            </td>
+                          <td>
+                                <span>  :مكان الميلاد </span>
+                            </td>
+                        </tr>
+        <!--         religion-->
+                         <tr>
+                               <td style="text-align:right">
+                                <span t-esc="docs.email"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:  :البريد الالكتروني </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.whatsapp_phone"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :رقم الواتساب </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.student_mobile"/>
+                            </td>
+                          <td>
+                                <span>  : :رقم الهاتف  </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.type_acceptance"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:   نوع القبول </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.ratio"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :النسبة  </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.school_name"/>
+                            </td>
+                          <td>
+                                <span>  : اسم المدرسة  </span>
+                            </td>
+                        </tr>
+
+
+               <!--applicant name-->
+
+                            <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.relative_relation"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:   صلة القرابة  </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.job"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :مهنته </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.applicant"/>
+                            </td>
+                          <td>
+                                <span>  :  ولي امر الطالب </span>
+                            </td>
+                        </tr>
+
+<!--                        -->
+                           <tr>
+                            <td style="text-align:left">
+                                <span t-esc="docs.fother_address"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:عنوانه </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.telephone"/>
+                            </td>
+                          <td>
+                                <span>  : تلفونه </span>
+                            </td>
+                               <td style="text-align:right">
+                                <span t-esc="docs.religion"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:الديانة </span>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="text-right">
+                    <p> :الاقرار</p>
+                    </div>
+                    <body t-esc="docs.comm_new"/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+
+                      <div>
+
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                                    :  التاريخ
+                                    </div>
+                                </b>
+                    </div>
+                    <br></br>
+                    <br></br>
+
+                    <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="docs.name"/>
+                                    : اسم الطالب
+                                    <br></br>
+                                     _____________________________ :التوقيع
+                                    </div>
+                                </b>
+                    </div>
+
+                    <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+
+                                    <span t-esc="docs.applicant"/>
+                                    : اسم ولي امر الطالب
+                                    <br></br>
+                                    _____________________________ :التوقيع
+                                    </div>
+                                </b>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+<!--old student-->
+
+
+
+        <template id="delivering_financial_old_template">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-center">
+            <img class="img" src="education_college/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                         <div class="text-center">
+                        <strong>استمارة تسجيل  </strong>
+                         </div>
+
+                    <br></br>
+
+                    <!--  Personal info -->
+
+
+                      <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                           اسم البرنامج :
+                                    <span t-esc="docs.program_id.name"/>
+                                    </div>
+                                </b>
+                           <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                                        : العام الدراسي
+                                    </div>
+                                </b>
+                    </div>
+                    <br></br>
+                    <br></br>
+                       <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="docs.name"/>
+                                         : اسم الطالب / الطالبة
+                                    </div>
+                                </b>
+                       </div>
+                    <br></br>
+                    <br></br>
+
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+              <!--       student name-->
+
+
+                        <tr>
+                               <td style="text-align:right">
+                                <span t-esc="docs.social_status"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>: الحالة الاجتماعية </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.nationality_id.name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:الجنسية</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.gender"/>
+                            </td>
+                          <td>
+                                <span>  :الجنس</span>
+                            </td>
+                        </tr>
+
+           <!--       nationality-->
+                         <tr>
+                               <td style="text-align:right">
+                                <span t-esc="docs.id_number"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>: الرقم الوطني </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.brath_day"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :تاريخ الميلاد</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.address"/>
+                            </td>
+                          <td>
+                                <span>  :مكان الميلاد </span>
+                            </td>
+                        </tr>
+        <!--         religion-->
+                         <tr>
+                               <td style="text-align:right">
+                                <span t-esc="docs.email"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:  :البريد الالكتروني </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.whatsapp_phone"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :رقم الواتساب </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.student_mobile"/>
+                            </td>
+                          <td>
+                                <span>  : :رقم الهاتف  </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.old_accept_type"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:   نوع القبول </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.ratio"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :النسبة  </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.school_name"/>
+                            </td>
+                          <td>
+                                <span>  : اسم المدرسة  </span>
+                            </td>
+                        </tr>
+
+
+               <!--applicant name-->
+
+                            <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.relative_relation"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:   صلة القرابة  </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.job"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :مهنته </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.applicant"/>
+                            </td>
+                          <td>
+                                <span>  :  ولي امر الطالب </span>
+                            </td>
+                        </tr>
+
+<!--                        -->
+                           <tr>
+                            <td style="text-align:left">
+                                <span t-esc="docs.fother_address"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:عنوانه </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.telephone"/>
+                            </td>
+                          <td>
+                                <span>  : تلفونه </span>
+                            </td>
+                               <td style="text-align:right">
+                                <span t-esc="docs.religion"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:الديانة </span>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="text-right">
+                    <p> :الاقرار</p>
+                    </div>
+                    <body t-esc="docs.comm_old"/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                     <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                                    :  التاريخ
+                                    </div>
+                                </b>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+
+                                    <span t-esc="docs.name"/>
+                                    : اسم الطالب
+                                    <br></br>
+                                     _____________________________ :التوقيع
+                                    </div>
+                                </b>
+                    </div>
+
+                    <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+
+                                    <span t-esc="docs.applicant"/>
+                                    : اسم ولي امر الطالب
+                                    <br></br>
+
+                                    _____________________________ :التوقيع
+                                    </div>
+                                </b>
+                    </div>
+
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+<!--Register Office-->
+
+        <template id="delivering_financial_information_template">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-left">
+            <img class="img" src="napata_clinic/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كلية نبتة </h4></strong></div>
+                <div><strong><h4> NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+
+                    <!--  Personal info -->
+                         <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="docs.name"/>
+                                         : الاسم
+                                    </div>
+                                </b>
+                         </div>
+                    <br></br>
+                    <br></br>
+
+                      <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                            البرنامج :
+                                    <span t-esc="docs.program_id.name"/>
+                                    </div>
+                                </b>
+                    </div>
+                    <br></br>
+                    <br></br>
+
+                       <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="docs.level_id.name"/>
+                                         : الفصل الدراسي
+                                    </div>
+                                </b>
+                       </div>
+                       <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                    <span t-esc="docs.form_number"/>
+                                         : الرقم الجامعي
+                                    </div>
+                                </b>
+                       </div>
+                </t>
+    </template>
+
+    <!--Form resignation-->
+
+
+
+        <template id="delivering_financial_resignation_template">
+        <t t-call="web.html_container">
+             <!-- Start header     -->
+        <div class="header">
+
+         <div class="row">
+
+         <div class="col-4 text-center">
+            <img class="img" src="education_college/static/img/logo.jpeg"  style="height:100px;width:220px" />
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+
+    </div>
+    <!-- End HEADER -->
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+            </div>
+    </t>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                         <div class="text-center"  color="black">
+                        <h1> امانة الشؤون العلمية  </h1>
+                             <h2>
+استمارة استقالة                        </h2>
+                         </div>
+
+                    <br></br>
+
+                    <!--  Personal info -->
+
+
+
+                      <div>
+                                <b style="font-size:14px;width:50%;float:right;">
+                                    <div class="text-right">
+                                            التاريخ :
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                                    </div>
+                                </b>
+
+                    </div>
+                    <br></br>
+                    <br></br>
+
+                    <table class="table align-middle"  style="width:100% ;border :2px solde black" cellpadding="12">
+              <!--       student name-->
+
+
+                        <tr>
+                             <div class="text-right"  color="black">
+                        <strong>  :-أولا: معلومات تملأ بواسطة الطالب</strong>
+                         </div>
+                            <td style="text-align:right">
+                                <span t-esc="docs.form_number"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>رقم الجلوس:</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.student_ids.name"/>
+                            </td>
+                          <td>
+                                <span> :اسم الطالب/الطالبة</span>
+                            </td>
+                        </tr>
+
+           <!--       nationality-->
+                         <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.exam_location"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:مكان الامتحان</span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.program.name"/>
+                            </td>
+                          <td>
+                                <span>:اسم البرنامج</span>
+                            </td>
+                        </tr>
+        <!--         religion-->
+
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.reasons"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسباب تقديم الاستقالة </span>
+                            </td>
+
+                              <td style="text-align:right">
+                                <span t-esc="docs.date_admission"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:تاريخ القبول بالكلية</span>
+                            </td>
+
+                        </tr>
+
+
+               <!--applicant name-->
+
+                            <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.data"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:التاريخ</span>
+                            </td>
+
+                            <td style="text-align:left;">
+                                <span> :توقيع الطالب/الطالبة</span>
+                            </td>
+                            </tr>
+
+                        <tr>
+                            <td style="text-align:right">
+                                <span t-esc="docs.st_moble"/>
+                            </td>
+                          <td>
+                                <span> :رقم الموبايل الثاني</span>
+                            </td>
+                             <td style="text-align:right">
+                                <span t-esc="docs.st_phone"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span> :رقم الموبايل</span>
+                            </td>
+                        </tr>
+
+<!--                        -->
+                        <tr>
+
+                            <td style="text-align:left">
+                                <span t-esc="docs.coordinator_recommend"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:توصية منسق البرنامج فيما يختص بالإستقالة </span>
+                            </td>
+                             <td style="text-align:left">
+                                <span t-esc="docs.academic_position"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>:الموقف الاكاديمي للطالب/الطالبة حتى تاريخ تقديمه للاستقالة </span>
+                            </td>
+                        </tr>
+
+                           <tr>
+                            <td style="text-align:left">
+                                <span t-esc="docs.coordinator_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:التاريخ </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.Coordinator_signature"/>
+                            </td>
+                          <td>
+                                <span>  :توقيع منسق البرنامج</span>
+                            </td>
+                               <td style="text-align:right">
+                                <span t-esc="docs.coordinator_name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم منسق البرنامج </span>
+                            </td>
+                        </tr>
+                           <tr>
+                            <td style="text-align:left">
+                                <span t-esc="docs.registrar_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:التاريخ </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.registrar_signature"/>
+                            </td>
+                          <td>
+                                <span> :توقيع المسجل</span>
+                            </td>
+                               <td style="text-align:right">
+                                <span t-esc="docs.registrar_name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم المسجل</span>
+                            </td>
+                        </tr>
+
+                           <tr>
+                            <td style="text-align:left">
+                                <span t-esc="docs.agent_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:التاريخ </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.agent_signature"/>
+                            </td>
+                          <td>
+                                <span> :توقيع الوكيل</span>
+                            </td>
+                               <td style="text-align:right">
+                                <span t-esc="docs.agent_name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم الوكيل</span>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td style="text-align:left">
+                                <span t-esc="docs.scientific_recommend"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:توصية أمين الشؤون العلمية </span>
+                            </td>
+                         </tr>
+                          <tr>
+                            <td style="text-align:left">
+                                <span t-esc="docs.scientific_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:التاريخ </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.scientific_signature"/>
+                            </td>
+                          <td>
+                                <span> :التوقيع </span>
+                            </td>
+                               <td style="text-align:right">
+                                <span t-esc="docs.scientific_name"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:اسم أمين الشؤون العلمية</span>
+                            </td>
+                        </tr>
+
+                         <tr>
+                            <td style="text-align:left">
+                                <span t-esc="docs.accreditation_date"/>
+                            </td>
+                            <td style="text-align:left;">
+                                <span>:التاريخ </span>
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="docs.accreditation_signature"/>
+                            </td>
+                          <td>
+                                <span> :التوقيع </span>
+                            </td>
+                         </tr>
+
+                    </table>
+
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>
+
+

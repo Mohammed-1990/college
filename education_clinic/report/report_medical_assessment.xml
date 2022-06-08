@@ -1,0 +1,15 @@
+<odoo>
+
+    <report
+        id="report_assessment"
+        model="clinic.assessment"
+        string="Medical Report"
+        name="education_clinic.delivering_financial_template_cicology"
+        file="clinic.assessment_report"
+        report_type="qweb-pdf"
+         menu="False"
+    />
+</odoo>
+
+
+

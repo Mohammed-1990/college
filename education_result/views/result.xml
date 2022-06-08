@@ -1,0 +1,97 @@
+<odoo>
+    <record model="ir.ui.view" id="education_result_collage_form_view">
+        <field name="name">education.result.form</field>
+        <field name="model">subject.degree</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Education result">
+                <header>
+                    <button name="confirm_action" type="object" states="draft" string="confirm" class="btn-primary"/>
+                    <button name="program_board_approve_action" states="confirm" type="object" string="Program Board"
+                            class="btn-primary"/>
+                    <button name="board_examiners_approve_action" type="object" states="program_board"
+                            string="Board Examiners" class="btn-primary"/>
+                    <button name="scientific_affairs_approve_action" type="object" states="board_examiners"
+                            string="Scientific Affairs" class="oe_highligth"/>
+                    <button name="scientific_council_approve_action" states="scientific_affairs" type="object"
+                            class="btn-primary" string="Scientific Council"/>
+                    <button name="done_action" states="scientific_council" type="object"
+                            class="btn-primary" string="Done"/>
+                    <button name="grade_calculation" states="done" type="object" class="oe_highlight"
+                            string="Grade Calculation"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="confirm,program_board,board_examiners,scientific_affairs,scientific_council,board_examiners,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="year_stady" readonly="1"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="college_id"  attrs="{'readonly':[('state','=','done')]}"  options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   required="1"/>
+                        <field name="program_id" attrs="{'readonly':[('state','=','done')]}"  options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   required="1"/>
+                        <field name="level_id" attrs="{'readonly':[('state','=','done')]}"  options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   required="1"/>
+                        <field name="semester_id" attrs="{'readonly':[('state','=','done')]}"  options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   required="1"/>
+                        <field name="batch_id" attrs="{'readonly':[('state','=','done')]}"  options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   required="1"/>
+                        <field name="subject_id" attrs="{'readonly':[('state','=','done')]}" options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                                   required="1"/>
+                    </group>
+                    <field name="degree_line" options="{'no_create': True, 'no_edit': True}">
+                        <tree string="Purchase Order Lines" editable="bottom" decoration-danger="total &lt; 50"
+                              decoration-success="total &gt;= 50">
+                            <field name="subject_id" readonly="1" invisible="1" force_save="1"/>
+                            <field name="student_id" readonly="1" required="1" force_save="1"/>
+                            <field name="exam_state" attrs="{'readonly':[('parent.state','=','done')]}"/>
+                            <field name="practical" attrs="{'readonly':[('parent.state','=','done')]}"/>
+                            <field name="theoretical" attrs="{'readonly':[('parent.state','=','done')]}"/>
+                            <field name="ass" attrs="{'readonly':[('parent.state','=','done')]}"/>
+                            <field name="final" attrs="{'readonly':[('parent.state','=','done')]}" />
+                            <field name="total" attrs="{'readonly':[('parent.state','=','done')]}" readonly="1" force_save="1"/>
+                            <field name="grad" attrs="{'readonly':[('parent.state','=','done')]}" readonly="1" force_save="1"/>
+                        </tree>
+                    </field>
+                    <group>
+                        <field name="user_id" readonly="1"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="education_result_tree_view">
+        <field name="name">subject.tree</field>
+        <field name="model">subject.degree</field>
+        <field name="arch" type="xml">
+            <tree string="subject tree">
+                <field name="college_id"/>
+                <field name="program_id"/>
+                <field name="level_id"/>
+                <field name="semester_id"/>
+                <field name="subject_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_result_list_action">
+        <field name="name">result</field>
+        <field name="res_model">subject.degree</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first result
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="education_result_menu" name="Subject Degrees"
+              parent="education_subject_degrees_menu" sequence="10"
+              action="education_result_list_action"/>
+</odoo>

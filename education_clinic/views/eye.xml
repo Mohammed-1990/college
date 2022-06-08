@@ -1,0 +1,93 @@
+<odoo>
+    <!-- startr tree viwe for nursing -->
+    <record model="ir.ui.view" id="clinic_eye_view_id">
+        <field name="name">clinic.eye.form</field>
+        <field name="model">clinic.eye</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Student Health Service" create="false">
+              <header groups="base.group_user">
+                        <button name="confirm_test_result" states="draft" type="object" string="Confirm" class="oe_highlight"/>
+                        <button name="approval_test_result" states="confirm" type="object" string="Approval Application" class="oe_highlight"/>
+                        <button name="done_test_result" states="approval" type="object" string="Done" class="oe_highlight"/>
+                        <button name="set_to_draft" states="confirm,approval" string="Set to Draft" type="object"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approval,done"/>
+                    </header>
+
+                <sheet>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            <span>Medical Examination</span>
+                        </h2>
+                    </div>
+                     <field name="image_1920" widget="image" class="oe_left oe_avatar"/>
+                     <group>
+                     <h3 style="text-align: center;">
+                                   <field name="name" placeholder="Student's Name" required="True" readonly="1"/>
+                            </h3>
+                            </group>
+
+                    <group  string="Student Information" colspan="8" col="4" name="main">
+                        <field name="program" readonly="1"/>
+                        <field name="patient_id" placeholder="Patient ID" readonly="1"/>
+                        <field name="nationality" readonly="1"/>
+                        <field name="birth_date" readonly="1"/>
+                        <field name="gender" readonly="1"/>
+                        <field name="religion" readonly="1"/>
+                        <field name="home" readonly="1"/>
+                        <field name="phone" readonly="1"/>
+                        <field name="email" readonly="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Past Medical History">
+                            <group string="Diseases" colspan="8" col="4">
+                                <field name="general"/>
+                                <field name="withoutglss"/>
+                                <field name="withglasses"/>
+                                <field name="color"/>
+                                <field name="near"/>
+                            </group>
+                        </page>
+                        <page string="Doctor Results">
+                            <group col="2">
+                                <field name="assessment"/>
+                                <field name="diagonis"/>
+                            </group>
+
+                            <group name="main">
+                                <field name="opthahmologist"/>
+                            </group>
+
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- start form viwe from nursing Info -->
+    <record model="ir.ui.view" id="clinic_eye_tree_view">
+        <field name="name">Clinic.tree</field>
+        <field name="model">clinic.eye</field>
+        <field name="arch" type="xml">
+            <tree string="eye tree">
+                <field name="name"/>
+                <field name="program"/>
+                <field name="birth_date"/>
+                <field name="phone"/>
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from lab Info -->
+    <record model="ir.actions.act_window" id="clinic_eye_list_action">
+        <field name="name">Optical Clinic</field>
+        <field name="res_model">clinic.eye</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first optical clinic
+            </p>
+        </field>
+    </record>
+    <menuitem id="clinic_eye_menu" name="Optical Office" parent="clinic_menu" sequence="20"
+              groups="groups_clinic_manager_optical,clinic_users_group"
+              action="clinic_eye_list_action"/>
+</odoo>

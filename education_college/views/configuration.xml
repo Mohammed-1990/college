@@ -1,0 +1,544 @@
+<odoo>
+    <!--    form  to add college-->
+    <record model="ir.ui.view" id="education_collage_tree_view">
+        <field name="name">college.tree</field>
+        <field name="model">college.college</field>
+        <field name="arch" type="xml">
+            <tree string="College tree">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_college_view_id">
+        <field name="name">education.college.form</field>
+        <field name="model">college.college</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Eduction Collage">
+                <sheet>
+                    <group>
+
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="College's Name" required="True"/>
+                            </h1>
+
+                        </div>
+                    </group>
+                    <notebook>
+                        <notebook>
+                            <page string="Other Info">
+                                <group>
+                                    <field name="company_id"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_college_viwe_search" model="ir.ui.view">
+        <field name="name">college.college.search</field>
+        <field name="model">college.college</field>
+        <field name="arch" type="xml">
+            <search string="College">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_college_list_action">
+        <field name="name">College</field>
+        <field name="res_model">college.college</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first College
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_college" name="College"
+              parent="menu_general_settings_root"
+              action="education_college_list_action"
+              sequence="10"/>
+
+    <!--    form  to add program -->
+    <record model="ir.ui.view" id="education_program_tree_view">
+        <field name="name">program.tree</field>
+        <field name="model">program.program</field>
+        <field name="arch" type="xml">
+            <tree string="Program tree">
+                <field name="college_id"/>
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_program_view_form">
+        <field name="name">education.program.form</field>
+        <field name="model">program.program</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Program">
+                <sheet>
+                    <group col="4" colspan="2">
+                        <field name="college_id" required="1"/>
+                        <field name="name" required="1"/>
+                        <field name="code" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Other Info">
+                            <group>
+                                <field name="company_id"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_program_viwe_search" model="ir.ui.view">
+        <field name="name">program.program.search</field>
+        <field name="model">program.program</field>
+        <field name="arch" type="xml">
+            <search string="Program">
+                <field name="college_id"/>
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_program_list_action">
+        <field name="name">Program</field>
+        <field name="res_model">program.program</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first program
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_program" name="Program"
+              parent="menu_general_settings_root"
+              action="education_program_list_action"
+              sequence="20"/>
+
+    <!--    form  to add specialization -->
+    <record model="ir.ui.view" id="education_specialization_tree_view">
+        <field name="name">specialization.tree</field>
+        <field name="model">specialization.specialization</field>
+        <field name="arch" type="xml">
+            <tree string="Specialization tree">
+                <field name="college_id"/>
+                <field name="program_id"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_specialization_view_form">
+        <field name="name">specialization.form</field>
+        <field name="model">specialization.specialization</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Specialization">
+                <sheet>
+                    <group col="4" colspan="2">
+                        <field name="college_id" required="1"/>
+                        <field name="program_id" required="1"/>
+                        <field name="name" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Other Info">
+                            <group>
+                                <field name="company_id"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_specialization_viwe_search" model="ir.ui.view">
+        <field name="name">specialization.search</field>
+        <field name="model">specialization.specialization</field>
+        <field name="arch" type="xml">
+            <search string="Specialization">
+                <field name="college_id"/>
+                <field name="program_id"/>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_specialization_list_action">
+        <field name="name">specialization</field>
+        <field name="res_model">specialization.specialization</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first specialization
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_specialization" name="Specialization"
+              parent="menu_general_settings_root"
+              action="education_specialization_list_action"
+              sequence="30"/>
+
+    <!--    form  to add semester -->
+    <record model="ir.ui.view" id="education_semester_tree_view">
+        <field name="name">semester.tree</field>
+        <field name="model">semester.semester</field>
+        <field name="arch" type="xml">
+            <tree string="Semester tree">
+                <field name="level_id"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_semester_view_form">
+        <field name="name">semester.form</field>
+        <field name="model">semester.semester</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Semester">
+                <sheet>
+                    <group col="4" colspan="2">
+                        <field name="level_id"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="name" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Other Info">
+                            <group>
+                                <field name="company_id"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_semester_viwe_search" model="ir.ui.view">
+        <field name="name">semester.search</field>
+        <field name="model">semester.semester</field>
+        <field name="arch" type="xml">
+            <search string="Smester">
+                <field name="level_id"/>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_semester_list_action">
+        <field name="name">Semester</field>
+        <field name="res_model">semester.semester</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first semester
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_Semester" name="Semester"
+              parent="menu_general_settings_root"
+              action="education_semester_list_action"
+              sequence="50"/>
+
+
+    <!--    form  to add Academic  Level-->
+    <record model="ir.ui.view" id="education_level_tree_view">
+        <field name="name">level.tree</field>
+        <field name="model">level.level</field>
+        <field name="arch" type="xml">
+            <tree string="Academic  Level tree">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_leveln_view_form">
+        <field name="name">education.level.form</field>
+        <field name="model">level.level</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Academic  Level">
+                <sheet>
+                    <group>
+                        <field name="name" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Other Info">
+                            <group>
+                                <field name="company_id"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_level_viwe_search" model="ir.ui.view">
+        <field name="name">level.level.search</field>
+        <field name="model">level.level</field>
+        <field name="arch" type="xml">
+            <search string="Academic  Level">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_level_list_action">
+        <field name="name">Academic Level</field>
+        <field name="res_model">level.level</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first type of level
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_level" name="Academic  Level"
+              parent="menu_general_settings_root"
+              action="education_level_list_action"
+              sequence="40"/>
+
+    <!--    form  to add batch -->
+    <record model="ir.ui.view" id="education_batch_tree_view">
+        <field name="name">batch.tree</field>
+        <field name="model">batch.batch</field>
+        <field name="arch" type="xml">
+            <tree string="Batch tree">
+                <field name="college_id"/>
+                <field name="program_id"/>
+                <field name="name"/>
+                <field name="study_year"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_batch_view_form">
+        <field name="name">batch.form</field>
+        <field name="model">batch.batch</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Batch">
+                <sheet>
+                    <group>
+                        <field name="study_year" required="1" readonly="1"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="college_id"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="program_id"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"
+                               required="1"/>
+                        <field name="name" required="1"/>
+                        <field name="year" />
+                    </group>
+
+                    <notebook>
+                        <page string="Other Info">
+                            <group>
+                                <field name="company_id"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_batch_viwe_search" model="ir.ui.view">
+        <field name="name">batch.search</field>
+        <field name="model">batch.batch</field>
+        <field name="arch" type="xml">
+            <search string="Batch">
+                <field name="college_id"/>
+                <field name="program_id"/>
+                <field name="name"/>
+                <field name="study_year"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_batch_list_action">
+        <field name="name">Batch</field>
+        <field name="res_model">batch.batch</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first batch
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_batch" name="Batch"
+              parent="menu_general_settings_root"
+              action="education_batch_list_action"
+              sequence="60"/>
+
+    <!--    form  to add type of admission-->
+    <record model="ir.ui.view" id="education_type_of_admission_tree_view">
+        <field name="name">admission.tree</field>
+        <field name="model">type.admission</field>
+        <field name="arch" type="xml">
+            <tree string="College tree">
+                <field name="admission_type"/>
+                <field name="nationality"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_type_of_admission_view_form">
+        <field name="name">education.typea.dmission.form</field>
+        <field name="model">type.admission</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Type Of Admission">
+                <sheet>
+                    <group col="4" colspan="2">
+                        <field name="admission_type" required="1"/>
+                        <field name="nationality" required="1"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_type_of_admission_viwe_search" model="ir.ui.view">
+        <field name="name">type.admission.search</field>
+        <field name="model">type.admission</field>
+        <field name="arch" type="xml">
+            <search string="Type Of Admission">
+                <field name="admission_type"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_type_of_admission_list_action">
+        <field name="name">Type Of Admission</field>
+        <field name="res_model">type.admission</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first type of admission">
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_type_of_admission" name="Type Of Admission"
+              parent="menu_general_settings_root"
+              action="education_type_of_admission_list_action"
+              sequence="70"/>
+
+
+    <!--    form  to add other  revenue-->
+    <record model="ir.ui.view" id="education_other_revenue_tree_view">
+        <field name="name">other.revenue.tree</field>
+        <field name="model">other.revenue</field>
+        <field name="arch" type="xml">
+            <tree string="other revenue tree">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="education_other_revenue_view_form">
+        <field name="name">other.revenue.form</field>
+        <field name="model">other.revenue</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Other Revenue ">
+                <sheet>
+                    <group>
+
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Other Revenue's Name" required="True"/>
+                            </h1>
+
+                        </div>
+                    </group>
+                    <notebook>
+                        <page string="Other Info">
+                            <group>
+                                <field name="company_id"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_other_revenue_search" model="ir.ui.view">
+        <field name="name">other.revenue.search</field>
+        <field name="model">other.revenue</field>
+        <field name="arch" type="xml">
+            <search string="Other Revenue">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="education_other_revenue_list_action">
+        <field name="name">Other Revenue</field>
+        <field name="res_model">other.revenue</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first other revenue
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_other_revenue" string="Other Revenue"
+              parent="menu_general_settings_root"
+              action="education_other_revenue_list_action"
+              sequence="80"/>
+
+
+</odoo>

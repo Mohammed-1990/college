@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--Access Group Category-->
+        <record id="category_account" model="ir.module.category">
+            <field name="name">Account</field>
+        </record>
+        <!--Group of Users-->
+        <record id="account_users_group" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="category_account"/>
+        </record>
+        <!--Group of Assistant-->
+
+        <record id="account_assistant_group" model="res.groups">
+            <field name="name">Acount Assistant</field>
+            <field name="category_id" ref="category_account"/>
+            <field name="implied_ids" eval="[(4, ref('account_users_group'))]"/>
+
+        </record>
+
+        <!--Group of Managers-->
+        <record id="account_manager_group" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="category_account"/>
+            <field name="implied_ids" eval="[(4, ref('account_assistant_group'))]"/>
+        </record>
+        <!--Group of super manager-->
+        <record id="account_system_admin_group" model="res.groups">
+            <field name="name">System Admin</field>
+            <field name="category_id" ref="category_account"/>
+            <field name="implied_ids" eval="[(4, ref('account_manager_group'))]"/>
+        </record>
+
+        <!--        Record Rule-->
+        <!--        <record model="ir.rule" id=" ">-->
+        <!--            <field name="name">Account  Request Record Rule</field>-->
+        <!--            <field name="model_id" ref="model_napata_accounting"/>-->
+        <!--            <field name="groups" eval="[(4, ref('account_user_access_group'))]"/>-->
+        <!--            <field name="domain_force">[('company_id', '=', user.company_id.id)]</field>-->
+        <!--        </record>-->
+
+
+        <!--        <record model="ir.rule" id="feepaid_account_rule">-->
+
+        <!--            <field name="name">res_partner: read only partners from your state</field>-->
+
+        <!--            <field name="model_id" ref="napata_register.model_napata_feepaid"/>-->
+
+        <!--            <field name="domain_force">[]</field>-->
+
+        <!--            <field name="groups" eval="[(4, ref('account_users_group'))]"/>-->
+
+        <!--            <field name="perm_read" eval="True"/>-->
+
+        <!--            <field name="perm_write" eval="True"/>-->
+
+        <!--            <field name="perm_unlink" eval="True"/>-->
+
+        <!--            <field name="perm_create" eval="True"/>-->
+
+        <!--        </record>-->
+
+    </data>
+</odoo>

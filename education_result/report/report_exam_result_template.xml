@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <report
+            id="action_exam_result_pdf_report"
+            model="exam.result.pdf.report"
+            string="Student Lists Pde Report"
+            name="education_result.report_exam_result_template"
+            file="education_result.report_exam_result_template"
+            report_type="qweb-pdf"/>
+
+    <template id="report_exam_result_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <h3>
+                        <center>Open Academy Courses detail</center>
+                    </h3>
+                    <br/>
+                    <br/>
+                    <!--                    <div class="row">-->
+                    <!--                        <div class="col-6">-->
+                    <!--                            Date from:-->
+                    <!--                            <span t-esc="datas['level_id']"/>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="col-6">-->
+                    <!--                            Courses:-->
+                    <!--                            <span t-esc="datas['level_id']"/>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="row">-->
+                    <!--                        <div class="col-6">-->
+                    <!--                            Date to:-->
+                    <!--                            <span t-esc="datas['level_id']"/>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="col-6">-->
+                    <!--                            Responsible:-->
+                    <!--                            <span t-esc="datas['level_id']"/>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!--                    <br/>-->
+
+                    <table class="table table-condensed table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="text-center">م:</th>
+                                <th class="text-center">رقم الطالب</th>
+                                <th class="text-center">اسم الطالب</th>
+                                <th class="text-center">المعدل الفصلي</th>
+                                <th class="text-center">المعدل التراكمي</th>
+                                <th class="text-center">الموقف</th>
+                                <th class="text-center">النتيجة</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="no" t-value="1"/>
+                            <t t-as="doc" t-foreach="docs">
+<!--                                <t t-call="education_college.custom_session_header_footer"/>-->
+<!--                                <tr>-->
+<!--                                    <td class="text-left">-->
+<!--                                        <span t-esc="no"/>-->
+<!--                                        <t t-set="no" t-value="no+1"/>-->
+<!--                                    </td>-->
+<!--                                    <td class="text-left">-->
+<!--                                        <span t-field="doc.form_number"/>-->
+<!--                                    </td>-->
+<!--                                    <td class="text-center">-->
+<!--                                        <span t-field="doc.name"/>-->
+<!--                                    </td>-->
+<!--                                    <td class="text-right">-->
+<!--                                    </td>-->
+<!--                                </tr>-->
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+
+</odoo>
